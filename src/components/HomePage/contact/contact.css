@@ -1,0 +1,69 @@
+.sixthSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sixthSec > div {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sixthSec > div > h1 {
+    font-size: 2rem;
+    color: #000;
+    font-family: "rubik";
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.sixthSec > div form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    direction: rtl;
+}
+.sixthSec > div form label {
+    font-size: 2rem;
+    font-family: "alef";
+}
+.sixthSec > div form input:not([type="submit"]) {
+    width: 100%;
+    height: 60px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #aaa6a6;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    transition: padding-right 0.5s, border-bottom 0.5s;
+}
+.sixthSec > div form input:not([type="submit"]):focus {
+    outline: none;
+    padding-right: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.sixthSec > div form input[type="submit"] {
+    width: 130px;
+    height: 130px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    font-family: "rubik";
+}
+@media (max-width: 1300px) {
+    .sixthSec > div form input[type="submit"] {
+        cursor: pointer;
+    }
+}

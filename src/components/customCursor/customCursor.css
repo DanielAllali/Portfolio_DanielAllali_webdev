@@ -1,0 +1,22 @@
+.custom-cursor {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+    transform: translate(400px, 400px);
+    z-index: 9999;
+}
+
+.custom-cursor.hover {
+    width: 25px;
+    height: 25px;
+}
+@media (max-width: 1300px) {
+    .custom-cursor {
+        display: none;
+    }
+}

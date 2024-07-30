@@ -1,0 +1,42 @@
+.fifthSec > div {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.fifthSec > div > h1 {
+    direction: rtl;
+    color: #f8f5ef;
+    font-size: 5rem;
+    font-family: "alef";
+}
+.fifthSec > div > div {
+    width: 80%;
+    height: 500px;
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f5ef;
+    border-radius: 2px;
+    padding: 20px;
+}
+.fifthSec > div > div > div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.fifthSec > div > div > div h1 {
+    font-size: 2.5rem;
+    color: #000;
+}
+.fifthSec > div > div > div p {
+    direction: rtl;
+}
+.fifthSec > div > div > div > div {
+}
