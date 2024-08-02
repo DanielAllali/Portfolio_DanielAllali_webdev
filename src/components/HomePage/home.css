@@ -1,43 +1,37 @@
 .home {
     overflow-x: hidden !important;
 }
+
 section {
     width: 100vw;
     overflow-x: hidden !important;
 }
+
 .firstSec {
     min-height: 100vh;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
 }
-.firstSec > h1 {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    font-size: 0.7rem;
-}
-.firstSec > h1 i {
-    color: #868383;
-}
+
 .secondSec {
     min-height: 100vh;
 }
+
 .thirdSec {
     min-height: 100vh;
 }
+
 .forthSec {
     min-height: 100vh;
 }
+
 @media (max-width: 480px) {
     .forthSec {
         display: none;
     }
 }
+
 .fifthSec {
     min-height: 100vh;
     padding-bottom: 100px;

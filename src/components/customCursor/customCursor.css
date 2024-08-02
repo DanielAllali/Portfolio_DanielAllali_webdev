@@ -6,7 +6,7 @@
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
-    transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-out, background-color 2s, width 0.1s, height 0.3s;
     transform: translate(400px, 400px);
     z-index: 9999;
 }
@@ -14,7 +14,9 @@
 .custom-cursor.hover {
     width: 25px;
     height: 25px;
+    background-color: #FF9356;
 }
+
 @media (max-width: 1300px) {
     .custom-cursor {
         display: none;

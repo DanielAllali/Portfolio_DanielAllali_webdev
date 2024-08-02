@@ -10,8 +10,8 @@
     align-items: center;
     justify-content: space-between;
     color: white;
-    background-color: #000;
-    padding-left: 7vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-left: 5vw;
     padding-right: 7vw;
 }
 
@@ -51,15 +51,18 @@
 .header nav ul a:hover::before {
     width: 100%;
 }
-.header > h2 {
+
+.header>h2 {
     display: none;
     cursor: pointer;
 }
+
 .header nav ul a li {
     color: white;
     font-size: 1.5rem;
     padding: 10px;
 }
+
 .smallNav {
     width: 100vw;
     height: 0;
@@ -69,13 +72,15 @@
     left: 0;
     z-index: 999;
 
-    background-color: black;
+    background-color: #FF9356;
     transition: height 0.5s;
     display: none;
 }
+
 .smallNav div {
     transition: transform 0.2s;
 }
+
 .smallNav ul {
     display: flex;
     flex-direction: column;
@@ -88,13 +93,16 @@
 .smallNav ul a {
     text-decoration: none;
 }
+
 .smallNav ul a li:hover {
     color: #ccc;
 }
+
 .smallNav ul a li {
     color: white;
     font-size: 1.2rem;
 }
+
 .smallNav h2 {
     width: 100%;
     display: flex;
@@ -104,6 +112,7 @@
     margin-top: 30px;
     cursor: pointer;
 }
+
 .btn {
     width: 220px;
     height: 30px;
@@ -151,18 +160,22 @@
 .btn:hover .btn-text-two {
     top: 50%;
 }
+
 @media (max-width: 1300px) {
     .header nav ul a li {
         cursor: pointer;
     }
 }
+
 @media (max-width: 750px) {
     .header nav {
         display: none;
     }
-    .header > h2 {
+
+    .header>h2 {
         display: block;
     }
+
     .smallNav {
         display: block;
     }

@@ -36,7 +36,7 @@ const Contact = () => {
         <div>
             <h1 id="contact">צור קשר</h1>
             <form>
-                <label data-aos="fade-left" htmlFor="user_name">
+                <label htmlFor="user_name">
                     השם שלי הוא
                 </label>
                 <input
@@ -47,7 +47,7 @@ const Contact = () => {
                     placeholder="דניאל אלאלי"
                 />
 
-                <label data-aos="fade-left" htmlFor="phone_number">
+                <label htmlFor="phone_number">
                     מספר טלפון שלי
                 </label>
                 <input
@@ -57,7 +57,7 @@ const Contact = () => {
                     placeholder="050-658-1406"
                 />
 
-                <label data-aos="fade-left" htmlFor="user_email">
+                <label htmlFor="user_email">
                     שלחו אימייל @
                 </label>
                 <input
@@ -68,7 +68,7 @@ const Contact = () => {
                     placeholder="daniel.allali12@gmail.com"
                 />
 
-                <label data-aos="fade-left" htmlFor="message">
+                <label htmlFor="message">
                     אני אומר
                 </label>
                 <input

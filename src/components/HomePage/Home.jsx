@@ -8,16 +8,15 @@ import ThirdSection from "./thirdSection/ThirdSection.jsx";
 import ForthSection from "./forthSection/ForthSection.jsx";
 import FifthSection from "./fifthSection/FifthSection.jsx";
 import Contact from "./contact/Contact.jsx";
+import Arrow from "../arrow/Arrow.jsx";
 
 const Home = () => {
     return (
         <div className="home">
             <Header />
+            <Arrow />
             <section className="firstSec">
                 <FirstSection />
-                <h1 style={{ color: "white" }}>
-                    <i className="bi bi-caret-down-fill"></i>
-                </h1>
             </section>
             <section className="secondSec">
                 <SecondSection />

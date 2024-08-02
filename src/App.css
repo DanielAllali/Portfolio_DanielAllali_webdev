@@ -2,22 +2,28 @@
     font-family: "humane";
     src: url("./media/fonts/HUMANE-Typeface/OpenType-PS/Humane-SemiBold.otf");
 }
+
 @font-face {
     font-family: "rubik";
     src: url("./media/fonts/Rubik/Rubik-VariableFont_wght.ttf");
 }
+
 @font-face {
     font-family: "alef";
     src: url("./media/fonts/Alef/Alef-Bold.ttf");
 }
+
 @font-face {
     font-family: "aktiv";
-    src: url("./media/fonts/Aktiv-Grotesk/AktivGrotesk-Hairline.otf");
+    /* src: url("./media/fonts/Aktiv-Grotesk/AktivGrotesk-Hairline.otf"); */
+    src: url("./media/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
+
 ::selection {
     background-color: red;
     color: #fff;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -26,14 +32,17 @@
     cursor: auto;
     scroll-behavior: auto;
 }
+
 @media (min-width: 1300px) {
     * {
         cursor: none;
     }
 }
+
 .App {
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
     width: 2px;
     height: 2px;
