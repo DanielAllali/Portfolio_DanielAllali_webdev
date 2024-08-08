@@ -50,7 +50,7 @@ const Home = () => {
             <section className="fifthSec">
                 <FifthSection />
             </section>
-            <section className="sixthSec">
+            <section id="contact" className="sixthSec">
                 <Contact />
             </section>
         </div>

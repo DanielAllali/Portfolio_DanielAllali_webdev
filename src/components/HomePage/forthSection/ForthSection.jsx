@@ -50,26 +50,26 @@ const ForthSection = () => {
                     div1.current.style.zIndex = "99";
                     return;
                 }
-                if (wrapperY <= -100 && wrapperY >= -200) {
+                if (wrapperY <= -100 && wrapperY >= -300) {
                     div2.current.style.position = "fixed";
                     div2.current.style.zIndex = "99";
                     return;
                 }
-                if (wrapperY <= -200 && wrapperY >= -300) {
+                if (wrapperY <= -300 && wrapperY >= -500) {
                     div3.current.style.position = "fixed";
                     div3.current.style.zIndex = "99";
                     return;
                 }
-                if (wrapperY <= -300 && wrapperY >= -400) {
+                if (wrapperY <= -500 && wrapperY >= -700) {
                     div4.current.style.position = "fixed";
                     div4.current.style.zIndex = "99";
                     return;
                 }
             }
-            if (wrapperY <= -400 || !scrollHijak) {
+            if (wrapperY <= -700 || !scrollHijak) {
                 if (scrollHijak) {
                     window.scrollTo({
-                        top: window.scrollY - 400,
+                        top: window.scrollY - 700,
                         behavior: "instant",
                     });
                 }

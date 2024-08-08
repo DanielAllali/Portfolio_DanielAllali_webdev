@@ -1,10 +1,14 @@
 .firstSec>div {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     color: white;
-
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: -1;
 }
 
 .firstSec>div>div {
@@ -45,8 +49,8 @@
 .firstSec>div>div>div span p {
     font-size: 1rem;
     direction: ltr;
-    color: #FF9356;
-    font-weight: lighter;
+    color: #000;
+    font-weight: normal;
 }
 
 .firstSec>div>div>div>h1 {
@@ -83,8 +87,8 @@
     width: 300px;
     font-size: 1rem;
     direction: rtr;
-    color: #FF9356;
-    font-weight: lighter;
+    color: #fff;
+    font-weight: normal;
 }
 
 /* 

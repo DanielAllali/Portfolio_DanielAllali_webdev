@@ -1,11 +1,25 @@
 .sixthSec {
+    position: relative;
+    z-index: -1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.sixthSec > div {
-    width: 70%;
+
+.sixthSec>div {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.sixthSec>div>div {
+    width: 100%;
     height: auto;
     margin: 0 auto;
     padding-top: 50px;
@@ -14,8 +28,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+
 }
-.sixthSec > div > h1 {
+
+.sixthSec>div>div>h1 {
     font-size: 2rem;
     color: #000;
     font-family: "rubik";
@@ -23,19 +43,21 @@
     margin-bottom: 30px;
 }
 
-.sixthSec > div form {
-    width: 100%;
+.sixthSec>div>div form {
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     direction: rtl;
 }
-.sixthSec > div form label {
+
+.sixthSec>div>div form label {
     font-size: 2rem;
     font-family: "alef";
 }
-.sixthSec > div form input:not([type="submit"]) {
+
+.sixthSec>div>div form input:not([type="submit"]) {
     width: 100%;
     height: 60px;
     background: none;
@@ -45,15 +67,16 @@
     font-size: 1rem;
     transition: padding-right 0.5s, border-bottom 0.5s;
 }
-.sixthSec > div form input:not([type="submit"]):focus {
+
+.sixthSec>div>div form input:not([type="submit"]):focus {
     outline: none;
     padding-right: 20px;
     border-bottom: 1px solid #000;
 }
 
-.sixthSec > div form input[type="submit"] {
-    width: 130px;
-    height: 130px;
+.sixthSec>div>div form input[type="submit"] {
+    width: 100px;
+    height: 100px;
     background-color: #000;
     color: #fff;
     border-radius: 50%;
@@ -62,8 +85,9 @@
     margin-top: 30px;
     font-family: "rubik";
 }
+
 @media (max-width: 1300px) {
-    .sixthSec > div form input[type="submit"] {
+    .sixthSec>div>div form input[type="submit"] {
         cursor: pointer;
     }
 }

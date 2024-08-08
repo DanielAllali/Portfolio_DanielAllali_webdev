@@ -30,7 +30,7 @@
     box-sizing: border-box;
     font-family: "rubik";
     cursor: auto;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 
 @media (min-width: 1300px) {

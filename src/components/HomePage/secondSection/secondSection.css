@@ -1,4 +1,9 @@
-.secondSec > div {
+.secondSec {
+    box-shadow: #ccc 5px 5px 20px;
+    padding-top: 50px;
+}
+
+.secondSec>div {
     width: 80vw;
     padding: 20px;
     margin: 0 auto;
@@ -9,48 +14,53 @@
     position: relative;
     border: 1px solid #868383;
     color: #fff;
+    z-index: -1;
 }
-.secondSec > div::before,
-.secondSec > div::after {
+
+.secondSec>div::before,
+.secondSec>div::after {
     content: "";
     position: absolute;
     background-color: #868383;
     z-index: -1;
 }
 
-.secondSec > div::before {
+.secondSec>div::before {
     width: 100%;
     height: 2px;
     top: 50%;
     left: 0;
 }
 
-.secondSec > div::after {
+.secondSec>div::after {
     width: 2px;
     height: 100%;
     top: 0;
     left: 50%;
 }
 
-.secondSec > div > h1 {
+.secondSec>div>h1 {
     font-size: 3rem;
     font-family: "aktiv";
     letter-spacing: -1px;
 }
-.secondSec > div > p {
+
+.secondSec>div>p {
     direction: rtl;
     text-align: center;
     color: #868383;
     margin-bottom: 40px;
 }
-.secondSec > div > p + div {
+
+.secondSec>div>p+div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
-.secondSec > div > p + div button {
+
+.secondSec>div>p+div button {
     background: none;
     border: 1px solid #868383;
     border-radius: 20px;
@@ -59,32 +69,39 @@
     margin-bottom: 50px;
     transition: background-color 0.2s;
 }
-.secondSec > div > p + div button:hover {
+
+.secondSec>div>p+div button:hover {
     background-color: #868383;
 }
-.secondSec > div > div + div {
+
+.secondSec>div>div+div {
     height: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.secondSec > div > div + div img {
+
+.secondSec>div>div+div img {
     width: 33%;
     position: absolute;
     z-index: 1;
     transform: rotate(4deg);
 }
-.secondSec > div > div + div img + img {
+
+.secondSec>div>div+div img+img {
     transform: rotate(5deg);
 }
-.secondSec > div > div + div img + img + img {
+
+.secondSec>div>div+div img+img+img {
     transform: rotate(-3deg);
 }
-.secondSec > div > div + div img + img + img + img {
+
+.secondSec>div>div+div img+img+img+img {
     transform: rotate(-2deg);
 }
-.secondSec > div > div + div img + img + img + img + img {
+
+.secondSec>div>div+div img+img+img+img+img {
     transform: rotate(0);
 }
 
@@ -125,7 +142,7 @@
     transform-origin: right;
 }
 
-.secondSec > ul {
+.secondSec>ul {
     width: 90vw;
     margin: 0 auto;
     display: flex;
@@ -135,10 +152,12 @@
     direction: rtl;
     list-style-type: none;
 }
-.secondSec > ul li {
+
+.secondSec>ul li {
     color: #fff;
 }
-.secondSec > ul li h1 {
+
+.secondSec>ul li h1 {
     font-family: "aktiv";
     letter-spacing: -1px;
     font-size: 3rem;
@@ -147,21 +166,26 @@
     align-items: center;
     gap: 10px;
 }
-.secondSec > ul li h1 > div {
+
+.secondSec>ul li h1>div {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #fff;
 }
-.secondSec > ul li p {
+
+.secondSec>ul li p {
     color: #868383;
 }
-.secondSec > ul li a .underlineBtn {
+
+.secondSec>ul li a .underlineBtn {
     font-weight: normal;
 }
-.secondSec > ul li a .underlineBtn::after {
+
+.secondSec>ul li a .underlineBtn::after {
     height: 1px;
 }
+
 /* @media (max-width: 850px) {
     .secondSec > ul li p {
         width: 70%;
@@ -169,33 +193,39 @@
 } */
 
 @media (max-width: 1200px) {
-    .secondSec > div > div + div img {
+    .secondSec>div>div+div img {
         width: 50%;
     }
 }
+
 @media (max-width: 670px) {
-    .secondSec > div > div + div img {
+    .secondSec>div>div+div img {
         width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .secondSec > div {
+    .secondSec>div {
         width: 90%;
     }
-    .secondSec > div > h1 {
+
+    .secondSec>div>h1 {
         font-size: 3rem;
     }
-    .secondSec > div > p {
+
+    .secondSec>div>p {
         font-size: 0.7rem;
     }
-    .secondSec > div > p + div {
+
+    .secondSec>div>p+div {
         gap: 10px;
     }
-    .secondSec > div > p + div button {
+
+    .secondSec>div>p+div button {
         font-size: 0.7rem;
     }
-    .secondSec > div > div + div {
+
+    .secondSec>div>div+div {
         height: 400px;
     }
 }

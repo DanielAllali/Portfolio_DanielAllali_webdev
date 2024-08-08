@@ -33,59 +33,61 @@ const Contact = () => {
         }
     }; */
     return (
-        <div>
-            <h1 id="contact">צור קשר</h1>
-            <form>
-                <label htmlFor="user_name">
-                    השם שלי הוא
-                </label>
-                <input
-                    type="text"
-                    id="user_name"
-                    name="user_name"
-                    required
-                    placeholder="דניאל אלאלי"
-                />
+        <div >
+            <div>
+                <h1>צור קשר</h1>
+                <form>
+                    <label htmlFor="user_name">
+                        השם שלי הוא
+                    </label>
+                    <input
+                        type="text"
+                        id="user_name"
+                        name="user_name"
+                        required
+                        placeholder="דניאל אלאלי"
+                    />
 
-                <label htmlFor="phone_number">
-                    מספר טלפון שלי
-                </label>
-                <input
-                    type="phone"
-                    id="phone_number"
-                    name="phone_number"
-                    placeholder="050-658-1406"
-                />
+                    <label htmlFor="phone_number">
+                        מספר טלפון שלי
+                    </label>
+                    <input
+                        type="phone"
+                        id="phone_number"
+                        name="phone_number"
+                        placeholder="050-658-1406"
+                    />
 
-                <label htmlFor="user_email">
-                    שלחו אימייל @
-                </label>
-                <input
-                    type="email"
-                    id="user_email"
-                    name="user_email"
-                    required
-                    placeholder="daniel.allali12@gmail.com"
-                />
+                    <label htmlFor="user_email">
+                        שלחו אימייל @
+                    </label>
+                    <input
+                        type="email"
+                        id="user_email"
+                        name="user_email"
+                        required
+                        placeholder="daniel.allali12@gmail.com"
+                    />
 
-                <label htmlFor="message">
-                    אני אומר
-                </label>
-                <input
-                    type="text"
-                    id="message"
-                    name="message"
-                    required
-                    placeholder="שלום שלום"
-                />
+                    <label htmlFor="message">
+                        אני אומר
+                    </label>
+                    <input
+                        type="text"
+                        id="message"
+                        name="message"
+                        required
+                        placeholder="שלום שלום"
+                    />
 
-                <input
-                    type="submit"
-                    id="submitBtn"
-                    value="שלח"
-                    ref={submitRef}
-                />
-            </form>
+                    <input
+                        type="submit"
+                        id="submitBtn"
+                        value="שלח"
+                        ref={submitRef}
+                    />
+                </form>
+            </div>
         </div>
     );
 };

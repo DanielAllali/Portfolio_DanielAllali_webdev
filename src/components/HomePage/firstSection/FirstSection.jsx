@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./firstSection.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
 const FirstSection = () => {
+    const firstRef = useState();
     useEffect(() => {
         AOS.init({ duration: 1000 });
+
     }, []);
     return (
-        <div>
+        <div ref={firstRef}>
             <div className="designdev">
                 <div>
                     <h1 data-aos="slide-up">עיצוב &</h1>
