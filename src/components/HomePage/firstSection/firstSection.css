@@ -5,10 +5,6 @@
     align-items: center;
     justify-content: space-between;
     color: white;
-    position: fixed;
-    top: 100px;
-    right: 0;
-    z-index: -1;
 }
 
 .firstSec>div>div {
@@ -63,6 +59,7 @@
     background-color: #fff;
     padding-left: 5vw;
     border-right: 3px solid #FF9356;
+    border: none;
 }
 
 .firstSec .myName {

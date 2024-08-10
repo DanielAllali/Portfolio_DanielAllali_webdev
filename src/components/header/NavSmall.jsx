@@ -1,9 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "./header.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { Context } from "../../Context";
 
 const NavSmall = ({ setDisplay }) => {
+    const { isHijack, setIsHijack } = useContext(Context);
+
     const navRef = useRef();
     const ulRef = useRef();
     useEffect(() => {
@@ -25,11 +28,17 @@ const NavSmall = ({ setDisplay }) => {
             }, 1000);
         }
     };
+    const changeRoot = () => {
+        setIsHijack(false);
+        setTimeout(() => {
+            setIsHijack(true);
+        }, 1000);
+    }
     return (
         <div className="smallNav" ref={navRef}>
             <div ref={ulRef}>
                 <ul>
-                    <a data-aos="fade-left" href="#" onClick={handleClose}>
+                    <a data-aos="fade-left" href="#" onClick={() => { handleClose(); changeRoot(); }}>
                         <li>
                             <button className="btn">
                                 <span className="btn-text-one">בית</span>
@@ -40,7 +49,7 @@ const NavSmall = ({ setDisplay }) => {
                     <a
                         data-aos="fade-right"
                         href="#services"
-                        onClick={handleClose}
+                        onClick={() => { handleClose(); changeRoot(); }}
                     >
                         <li>
                             <button className="btn">
@@ -56,7 +65,7 @@ const NavSmall = ({ setDisplay }) => {
                     <a
                         data-aos="fade-left"
                         href="#project"
-                        onClick={handleClose}
+                        onClick={() => { handleClose(); changeRoot(); }}
                     >
                         <li>
                             <button className="btn">
@@ -68,7 +77,7 @@ const NavSmall = ({ setDisplay }) => {
                     <a
                         data-aos="fade-right"
                         href="#contact"
-                        onClick={handleClose}
+                        onClick={() => { handleClose(); changeRoot(); }}
                     >
                         <li>
                             <button className="btn">
@@ -78,7 +87,7 @@ const NavSmall = ({ setDisplay }) => {
                         </li>
                     </a>
                 </ul>
-                <h2 data-aos="fade-up" onClick={handleClose}>
+                <h2 data-aos="fade-up" onClick={() => { handleClose(); changeRoot(); }}>
                     סגור
                 </h2>
             </div>

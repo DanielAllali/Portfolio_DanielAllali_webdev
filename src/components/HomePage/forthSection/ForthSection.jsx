@@ -1,14 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "./forthSection.css";
 
 const ForthSection = () => {
+
     const div1 = useRef();
     const div2 = useRef();
     const div3 = useRef();
     const div4 = useRef();
     const wrapper = useRef();
     let scrollHijak = true;
-
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {

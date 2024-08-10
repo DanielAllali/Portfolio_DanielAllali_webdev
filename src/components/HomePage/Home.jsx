@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./home.css";
 import Header from "../header/Header";
 import FirstSection from "./firstSection/FirstSection";
@@ -9,8 +9,11 @@ import ForthSection from "./forthSection/ForthSection.jsx";
 import FifthSection from "./fifthSection/FifthSection.jsx";
 import Contact from "./contact/Contact.jsx";
 import Arrow from "../arrow/Arrow.jsx";
+import { Context } from "../../Context";
 
 const Home = () => {
+    const { isHijack, setIsHijack } = useContext(Context);
+
     return (
         <div className="home">
             <Header />
@@ -45,7 +48,7 @@ const Home = () => {
                 <ThirdSection />
             </section>
             <section className="forthSec">
-                <ForthSection />
+                {isHijack && <ForthSection />}
             </section>
             <section className="fifthSec">
                 <FifthSection />
