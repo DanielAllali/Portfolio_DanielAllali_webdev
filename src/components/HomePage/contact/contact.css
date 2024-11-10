@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.sixthSec>div {
+.sixthSec > div {
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -18,7 +18,7 @@
     margin: 0 auto;
 }
 
-.sixthSec>div>div {
+.sixthSec > div > div {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -28,22 +28,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: relative;
     z-index: 1;
     top: 0;
     right: 0;
-
 }
 
-.sixthSec>div>div>h1 {
+.sixthSec > div > div > h1 {
     font-size: 2rem;
-    color: #000;
+    color: var(--strong);
     font-family: "rubik";
     font-weight: normal;
+    margin-bottom: 10px;
+}
+.sixthSec > div > div > p {
+    direction: rtl;
     margin-bottom: 30px;
+    color: var(--highlight);
 }
 
-.sixthSec>div>div form {
+.sixthSec > div > div form {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -52,12 +56,12 @@
     direction: rtl;
 }
 
-.sixthSec>div>div form label {
+.sixthSec > div > div form label {
     font-size: 2rem;
     font-family: "alef";
 }
 
-.sixthSec>div>div form input:not([type="submit"]) {
+.sixthSec > div > div form input:not([type="submit"]) {
     width: 100%;
     height: 60px;
     background: none;
@@ -68,30 +72,30 @@
     transition: padding-right 0.5s, border-bottom 0.5s;
 }
 
-.sixthSec>div>div form input:not([type="submit"]):focus {
+.sixthSec > div > div form input:not([type="submit"]):focus {
     outline: none;
     padding-right: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--strong);
 }
 
-.sixthSec>div>div form input[type="submit"] {
+.sixthSec > div > div form input[type="submit"] {
     width: 100px;
     height: 100px;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--strong);
+    color: var(--weak);
     border-radius: 50%;
     border: none;
     font-size: 1.4rem;
     margin-top: 30px;
-    font-family: "rubik";
+    transition: all 0.2s;
 }
 
-.sixthSec>div>div form input[type="submit"]:hover {
-    background-color: #ccc;
+.sixthSec > div > div form input[type="submit"]:hover {
+    background-color: var(--highlight);
 }
 
 @media (max-width: 1300px) {
-    .sixthSec>div>div form input[type="submit"] {
+    .sixthSec > div > div form input[type="submit"] {
         cursor: pointer;
     }
 }

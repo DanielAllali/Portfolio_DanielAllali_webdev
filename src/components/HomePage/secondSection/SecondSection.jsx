@@ -62,10 +62,10 @@ const SecondSection = () => {
                 חדשנית ויצירתית בכל פעם.
             </p>
             <div>
-                <button>UX/UI</button>
-                <button>עיצוב</button>
-                <button>אתרי תדמית</button>
-                <button>דפי נחיתה</button>
+                <h2>UX/UI</h2>
+                <h2>עיצוב</h2>
+                <h2>אתרי תדמית</h2>
+                <h2>דפי נחיתה</h2>
             </div>
             <div>
                 <img ref={img1Ref} src={img1} alt="image" />

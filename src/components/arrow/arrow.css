@@ -1,8 +1,8 @@
 .arrow {
     width: 35px;
     padding: 10px;
-    color: #000;
-    border: 1px solid #000;
+    color: var(--strong);
+    border: 1px solid var(--strong);
     background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
     bottom: 10px;
@@ -14,7 +14,6 @@
     align-items: center;
     justify-content: center;
     transition: width 0.2s, height 0.8s, color 0.2s, background-color 0.2s;
-
 }
 
 .arrow:hover {

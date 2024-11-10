@@ -33,13 +33,12 @@ const Contact = () => {
         }
     }; */
     return (
-        <div >
+        <div>
             <div>
                 <h1>צור קשר</h1>
+                <p>תשאירו פרטים ואני אחזור אליכם בהקדם!</p>
                 <form>
-                    <label htmlFor="user_name">
-                        השם שלי הוא
-                    </label>
+                    <label htmlFor="user_name">השם שלי הוא</label>
                     <input
                         type="text"
                         id="user_name"
@@ -48,9 +47,7 @@ const Contact = () => {
                         placeholder="דניאל אלאלי"
                     />
 
-                    <label htmlFor="phone_number">
-                        מספר טלפון שלי
-                    </label>
+                    <label htmlFor="phone_number">מספר הטלפון שלי</label>
                     <input
                         type="phone"
                         id="phone_number"
@@ -58,9 +55,7 @@ const Contact = () => {
                         placeholder="050-658-1406"
                     />
 
-                    <label htmlFor="user_email">
-                        שלחו אימייל @
-                    </label>
+                    <label htmlFor="user_email">האימייל שלי@</label>
                     <input
                         type="email"
                         id="user_email"
@@ -69,7 +64,7 @@ const Contact = () => {
                         placeholder="daniel.allali12@gmail.com"
                     />
 
-                    <label htmlFor="message">
+                    {/* <label htmlFor="message">
                         אני אומר
                     </label>
                     <input
@@ -79,7 +74,7 @@ const Contact = () => {
                         required
                         placeholder="שלום שלום"
                     />
-
+ */}
                     <input
                         type="submit"
                         id="submitBtn"

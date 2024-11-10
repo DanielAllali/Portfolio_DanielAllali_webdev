@@ -1,22 +1,17 @@
 import React from "react";
 import "./fifthSection.css";
-import websiteGif from "../../../media/images/websiteVideo.gif";
-import reactGif from "../../../media/images/reactGif.gif";
+import websiteVideo from "../../../media/images/websiteVideo2.mp4";
+import techVideo from "../../../media/images/techVideo.mp4";
+import personalityVideo from "../../../media/images/personalityVideo.mp4";
 
 const FifthSection = () => {
     return (
         <div>
-            <h1>מה אני מציע, ולמה אני?</h1>
             <div>
-                <img src={websiteGif} alt="your doesnt support this gif" />
                 <div>
-                    <h1>אתרי תדמית</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corrupti necessitatibus ipsa odio quaerat reprehenderit
-                        soluta perspiciatis nam recusandae et. Corrupti nemo
-                        quia dolorum temporibus eum.
-                    </p>
+                    <video autoPlay muted loop src={websiteVideo}></video>
+                </div>
+                <div className="textDiv">
                     <h1>דפי נחיתה</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -28,6 +23,9 @@ const FifthSection = () => {
             </div>
             <div>
                 <div>
+                    <video autoPlay muted loop src={techVideo}></video>
+                </div>
+                <div className="textDiv">
                     <h1>פלטפורמות & כלים טכנולוגיים</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -36,16 +34,17 @@ const FifthSection = () => {
                         quia dolorum temporibus eum.
                     </p>
                     <div>
-                        <button className="underlineBtn">React JS</button>
-                        <button className="underlineBtn">HTML</button>
-                        <button className="underlineBtn">CSS</button>
+                        <h2 className="underlineBtn">React JS</h2>
+                        <h2 className="underlineBtn">HTML</h2>
+                        <h2 className="underlineBtn">CSS</h2>
                     </div>
                 </div>
-                <img src={reactGif} alt="your browser doest support this gif" />
             </div>
             <div>
-                <img src="" alt="your browser doest support this gif" />
                 <div>
+                    <video autoPlay muted loop src={personalityVideo}></video>
+                </div>
+                <div className="textDiv">
                     <h1>איכות ומקצועיות</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.

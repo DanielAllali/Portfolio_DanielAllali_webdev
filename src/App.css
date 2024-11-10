@@ -18,17 +18,21 @@
     /* src: url("./media/fonts/Aktiv-Grotesk/AktivGrotesk-Hairline.otf"); */
     src: url("./media/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
+@font-face {
+    font-family: "NotoSans";
+    src: url("./media/fonts/Noto_Sans_Hebrew/NotoSansHebrew-VariableFont_wdth\,wght.ttf");
+}
 
 ::selection {
-    background-color: red;
-    color: #fff;
+    background-color: var(--highlight_strong);
+    color: var(--weak);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "rubik";
+    font-family: "NotoSans";
     cursor: auto;
     scroll-behavior: smooth;
 }
@@ -49,7 +53,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #fff;
+    background: var(--weak);
 }
 
 ::-webkit-scrollbar-thumb {

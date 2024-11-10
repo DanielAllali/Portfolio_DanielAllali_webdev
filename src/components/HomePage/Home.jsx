@@ -10,6 +10,8 @@ import FifthSection from "./fifthSection/FifthSection.jsx";
 import Contact from "./contact/Contact.jsx";
 import Arrow from "../arrow/Arrow.jsx";
 import { Context } from "../../Context";
+import SeventhSection from "./seventhSection/SeventhSection.jsx";
+import Footer from "./footer/Footer.jsx";
 
 const Home = () => {
     const { isHijack, setIsHijack } = useContext(Context);
@@ -53,9 +55,13 @@ const Home = () => {
             <section className="fifthSec">
                 <FifthSection />
             </section>
+            <section className="seventhSection">
+                <SeventhSection />
+            </section>
             <section id="contact" className="sixthSec">
                 <Contact />
             </section>
+            <Footer />
         </div>
     );
 };

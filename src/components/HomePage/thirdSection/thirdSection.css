@@ -38,9 +38,9 @@
 }
 .thirdSec > div > div > div button {
     background: none;
-    border: 1px solid #000;
+    border: 1px solid var(--strong);
     border-radius: 20px;
-    color: #000;
+    color: var(--strong);
     padding: 10px;
     margin-bottom: 50px;
     transition: background-color 0.2s;
@@ -52,10 +52,10 @@
     direction: rtl;
 }
 .thirdSec > div > div > a button {
-    color: #000;
+    color: var(--strong);
 }
 .thirdSec > div > div > a button::after {
-    background-color: #000;
+    background-color: var(--strong);
     height: 1px;
 }
 

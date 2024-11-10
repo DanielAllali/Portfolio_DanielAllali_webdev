@@ -1,51 +1,103 @@
 .fifthSec {
-    box-shadow: #000 5px 5px 20px;
+    background-color: #f8f5ef;
 }
 
-.fifthSec>div {
+.fifthSec > div {
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
 }
 
-.fifthSec>div>h1 {
+.fifthSec > div > h1 {
     direction: rtl;
     color: #f8f5ef;
+    color: var(--highlight);
     font-size: 5rem;
-    font-family: "alef";
 }
 
-.fifthSec>div>div {
-    width: 80%;
+.fifthSec > div > div {
+    width: 100%;
     height: 500px;
     direction: rtl;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
     background-color: #f8f5ef;
     border-radius: 2px;
-    padding: 20px;
 }
 
-.fifthSec>div>div>div {
-    width: 40%;
+.fifthSec > div > div > div {
+    width: 50%;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
+    overflow: hidden;
+    background-color: var(--highlight);
+    order: 1;
 }
-
-.fifthSec>div>div>div h1 {
+.fifthSec > div > div:nth-child(2) > div {
+    order: 2;
+}
+.fifthSec > div > div:nth-child(2) > div.textDiv {
+    order: 1;
+}
+.fifthSec > div > div > div.textDiv {
+    padding: 20px;
+    background-color: #f8f5ef;
+    align-items: start;
+    order: 2;
+}
+.fifthSec > div > div > div.textDiv h2 {
+    color: var(--strong);
+}
+.fifthSec > div > div > div.textDiv h2::after {
+    background-color: var(--strong);
+}
+.fifthSec > div > div > div video {
+    width: 80%;
+}
+.fifthSec > div > div > div h1 {
     font-size: 2.5rem;
-    color: #000;
+    color: var(--strong);
 }
 
-.fifthSec>div>div>div p {
+.fifthSec > div > div > div p {
     direction: rtl;
 }
-
-.fifthSec>div>div>div>div {}
+@media (max-width: 990px) {
+    .fifthSec > div > div {
+        height: 1000px !important;
+        flex-direction: column;
+    }
+    .fifthSec > div > div > div {
+        width: 100%;
+        height: 700px;
+        order: 1 !important;
+    }
+    .fifthSec > div > div > div video {
+        width: 80%;
+    }
+    .fifthSec > div > div > div.textDiv {
+        height: 300px;
+        order: 2 !important;
+    }
+}
+@media (max-width: 480px) {
+    .fifthSec > div > div {
+        height: 500px !important;
+    }
+    .fifthSec > div > div > div {
+        height: 200px;
+    }
+    .fifthSec > div > div > div video {
+        max-height: 180px;
+    }
+    .fifthSec > div > div > div.textDiv {
+        height: 300px;
+    }
+}
