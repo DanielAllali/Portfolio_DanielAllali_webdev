@@ -16,7 +16,21 @@
     color: var(--highlight);
     font-size: 5rem;
 }
-
+.fifthSec > div > div:first-child {
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fifthSec > div > div:first-child h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.fifthSec > div > div:first-child h1 span {
+    color: var(--highlight);
+}
 .fifthSec > div > div {
     width: 100%;
     height: 500px;
@@ -38,14 +52,34 @@
     justify-content: center;
     overflow: hidden;
     background-color: var(--highlight);
+
     order: 1;
 }
-.fifthSec > div > div:nth-child(2) > div {
+.fifthSec > div > div:nth-child(even) > div {
     order: 2;
 }
-.fifthSec > div > div:nth-child(2) > div.textDiv {
+.fifthSec > div > div:nth-child(even) > div.textDiv {
     order: 1;
 }
+.fifthSec > div > div > div.textDiv div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.fifthSec > div > div > div.textDiv div h2 {
+    font-size: 0.8rem;
+    background: none;
+    border: 1px solid #868383;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: background-color 0.2s;
+}
+
 .fifthSec > div > div > div.textDiv {
     padding: 20px;
     background-color: #f8f5ef;
@@ -71,7 +105,7 @@
 }
 @media (max-width: 990px) {
     .fifthSec > div > div {
-        height: 1000px !important;
+        height: auto;
         flex-direction: column;
     }
     .fifthSec > div > div > div {
@@ -89,10 +123,16 @@
 }
 @media (max-width: 480px) {
     .fifthSec > div > div {
-        height: 500px !important;
+        height: auto;
     }
     .fifthSec > div > div > div {
         height: 200px;
+    }
+    .fifthSec > div > div > div h1 {
+        font-size: 1.5rem;
+    }
+    .fifthSec > div > div > div p {
+        font-size: 0.7rem;
     }
     .fifthSec > div > div > div video {
         max-height: 180px;

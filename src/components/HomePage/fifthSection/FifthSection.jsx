@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./fifthSection.css";
 import websiteVideo from "../../../media/images/websiteVideo2.mp4";
 import techVideo from "../../../media/images/techVideo.mp4";
@@ -8,10 +8,15 @@ const FifthSection = () => {
     return (
         <div>
             <div>
+                <h1 data-aos="fade-up">
+                    למה <span>אני?</span>
+                </h1>
+            </div>
+            <div>
                 <div>
                     <video autoPlay muted loop src={websiteVideo}></video>
                 </div>
-                <div className="textDiv">
+                <div data-aos="fade-left" className="textDiv">
                     <h1>דפי נחיתה</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -25,7 +30,7 @@ const FifthSection = () => {
                 <div>
                     <video autoPlay muted loop src={techVideo}></video>
                 </div>
-                <div className="textDiv">
+                <div data-aos="fade-right" className="textDiv">
                     <h1>פלטפורמות & כלים טכנולוגיים</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -34,9 +39,9 @@ const FifthSection = () => {
                         quia dolorum temporibus eum.
                     </p>
                     <div>
-                        <h2 className="underlineBtn">React JS</h2>
-                        <h2 className="underlineBtn">HTML</h2>
-                        <h2 className="underlineBtn">CSS</h2>
+                        <h2>React JS</h2>
+                        <h2>HTML</h2>
+                        <h2>CSS</h2>
                     </div>
                 </div>
             </div>
@@ -44,7 +49,7 @@ const FifthSection = () => {
                 <div>
                     <video autoPlay muted loop src={personalityVideo}></video>
                 </div>
-                <div className="textDiv">
+                <div data-aos="fade-left" className="textDiv">
                     <h1>איכות ומקצועיות</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -32,10 +32,11 @@ const Header = () => {
     useEffect(() => {
         if (header.current) {
             header.current.style.transition = "transform 0.3s";
-            header.current.style.transform = visible ? "translateY(0)" : "translateY(-120px)";
+            header.current.style.transform = visible
+                ? "translateY(0)"
+                : "translateY(-120px)";
         }
     }, [visible]);
-
 
     useEffect(() => {
         AOS.init({ duration: 1000 });
@@ -46,11 +47,8 @@ const Header = () => {
         setTimeout(() => {
             setIsHijack(true);
         }, 1000);
-    }
-    useEffect(() => {
-        console.log(isHijack);
+    };
 
-    }, [isHijack])
     return (
         <>
             <div ref={header} className="header">

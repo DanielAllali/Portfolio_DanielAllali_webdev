@@ -151,13 +151,15 @@
     }
     .firstSec header > div {
         width: 50vw;
-        max-height: 45vh;
+        max-height: 40svh;
     }
     .firstSec header > div.designdev {
         width: 100vw;
         background-image: url("../../../media/images/myImage.jpg");
     }
-
+    .firstSec > div > header + div {
+        bottom: 50px;
+    }
     .firstSec .myName h1 {
         font-size: 5rem;
         letter-spacing: 3px;

@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./firstSection.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
 const FirstSection = () => {
-    const firstRef = useState();
     const [currentTime, setCurrentTime] = useState("");
 
     useEffect(() => {
@@ -24,7 +23,7 @@ const FirstSection = () => {
         return () => clearInterval(timerId);
     }, []);
     return (
-        <div ref={firstRef}>
+        <div>
             {/* <div className="designdev">
                 <div>
                     <h1 data-aos="slide-up">עיצוב &</h1>

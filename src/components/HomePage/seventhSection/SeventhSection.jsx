@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./seventhSection.css";
 
 const SeventhSection = () => {
     return (
         <div id="proccess">
-            <h1>אז מה התהליך?</h1>
+            <h1 data-aos="fade-up">אז מה התהליך?</h1>
             <ul>
                 <li>
                     <h1>1</h1>

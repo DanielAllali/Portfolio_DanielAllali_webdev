@@ -12,6 +12,7 @@ import Arrow from "../arrow/Arrow.jsx";
 import { Context } from "../../Context";
 import SeventhSection from "./seventhSection/SeventhSection.jsx";
 import Footer from "./footer/Footer.jsx";
+import Faq from "./faq/Faq.jsx";
 
 const Home = () => {
     const { isHijack, setIsHijack } = useContext(Context);
@@ -49,9 +50,12 @@ const Home = () => {
             <section className="thirdSec">
                 <ThirdSection />
             </section>
-            <section className="forthSec">
-                {isHijack && <ForthSection />}
+            <section id="faq">
+                <Faq />
             </section>
+            {/* <section className="forthSec">
+                {isHijack && <ForthSection />}
+            </section> */}
             <section className="fifthSec">
                 <FifthSection />
             </section>
