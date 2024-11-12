@@ -1,5 +1,5 @@
 .arrow {
-    width: 35px;
+    height: 40px;
     padding: 10px;
     color: var(--strong);
     border: 1px solid var(--strong);
@@ -13,10 +13,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    transition: width 0.2s, height 0.8s, color 0.2s, background-color 0.2s;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .arrow:hover {
-    width: 40px;
-    height: 40px;
+    height: 45px;
 }

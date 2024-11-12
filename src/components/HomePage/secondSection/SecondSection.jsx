@@ -19,38 +19,42 @@ const SecondSection = () => {
         AOS.init({ duration: 1000 });
     }, []);
     const handleImages = () => {
-        img1Ref.current.style.zIndex = "1";
-        img2Ref.current.style.zIndex = "1";
-        img2Ref2.current.style.zIndex = "1";
-        img3Ref.current.style.zIndex = "1";
-        img4Ref.current.style.zIndex = "1";
-        if (
-            (img1Ref.current,
-            img2Ref.current,
-            img2Ref2.current,
-            img3Ref.current,
-            img4Ref.current)
-        ) {
-            if (window.scrollY < 500) {
-                img1Ref.current.style.zIndex = "2";
-                return;
+        try {
+            if (
+                (img1Ref.current,
+                img2Ref.current,
+                img2Ref2.current,
+                img3Ref.current,
+                img4Ref.current)
+            ) {
+                img1Ref.current.style.zIndex = "1";
+                img2Ref.current.style.zIndex = "1";
+                img2Ref2.current.style.zIndex = "1";
+                img3Ref.current.style.zIndex = "1";
+                img4Ref.current.style.zIndex = "1";
+                if (window.scrollY < 500) {
+                    img1Ref.current.style.zIndex = "2";
+                    return;
+                }
+                if (window.scrollY < 650) {
+                    img2Ref.current.style.zIndex = "2";
+                    return;
+                }
+                if (window.scrollY < 800) {
+                    img2Ref2.current.style.zIndex = "2";
+                    return;
+                }
+                if (window.scrollY < 950) {
+                    img3Ref.current.style.zIndex = "2";
+                    return;
+                }
+                if (window.scrollY < 1100) {
+                    img4Ref.current.style.zIndex = "2";
+                    return;
+                }
             }
-            if (window.scrollY < 650) {
-                img2Ref.current.style.zIndex = "2";
-                return;
-            }
-            if (window.scrollY < 800) {
-                img2Ref2.current.style.zIndex = "2";
-                return;
-            }
-            if (window.scrollY < 950) {
-                img3Ref.current.style.zIndex = "2";
-                return;
-            }
-            if (window.scrollY < 1100) {
-                img4Ref.current.style.zIndex = "2";
-                return;
-            }
+        } catch (err) {
+            console.log(err);
         }
     };
     return (
@@ -62,10 +66,10 @@ const SecondSection = () => {
                 חדשנית ויצירתית בכל פעם.
             </p>
             <div>
-                <h2>UX/UI</h2>
-                <h2>עיצוב</h2>
-                <h2>אתרי תדמית</h2>
+                <h2>מעוצב אישית</h2>
                 <h2>דפי נחיתה</h2>
+                <h2>התאמה לכל גדלי המסכים</h2>
+                <h2>מהירות</h2>
             </div>
             <div>
                 <img ref={img1Ref} src={img1} alt="image" />

@@ -10,9 +10,10 @@ const ThirdSection = () => {
                 <img src={gymImg} alt="image can't load try again" />
                 <h1>PROACTIVE GYM</h1>
                 <div>
-                    <button>UX/UI</button>
-                    <button>עיצוב</button>
-                    <button>אתרי תדמית</button>
+                    <h2>עיצוב אישי</h2>
+                    <h2>דף נחיתה</h2>
+                    <h2>מהירות</h2>
+                    <h2>התאמה לכל המסכים</h2>
                 </div>
                 <p>
                     פרויקט לדוגמה. אתר תדמית למכון כושר פקטיבי,

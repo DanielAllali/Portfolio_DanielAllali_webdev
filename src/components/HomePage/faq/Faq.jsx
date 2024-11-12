@@ -54,7 +54,7 @@ const Faq = () => {
                 {faqData.map(({ key, he, heAnswer }) => (
                     <li key={key} className={openFaqs[key] ? "expanded" : ""}>
                         <div>
-                            <h4 style={{ direction: "rtl" }}>{he}</h4>
+                            <h2 style={{ direction: "rtl" }}>{he}</h2>
                             <button>
                                 <label className="hamburger">
                                     <input

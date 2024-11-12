@@ -4,26 +4,11 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 const FirstSection = () => {
-    const [currentTime, setCurrentTime] = useState("");
-
     useEffect(() => {
         AOS.init({ duration: 1000 });
-        const updateTime = () => {
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, "0");
-            const minutes = String(now.getMinutes()).padStart(2, "0");
-            const seconds = String(now.getSeconds()).padStart(2, "0");
-            setCurrentTime(`${hours}:${minutes}:${seconds}`);
-        };
-
-        // Update time every second
-        const timerId = setInterval(updateTime, 1000);
-
-        // Cleanup interval on component unmount
-        return () => clearInterval(timerId);
     }, []);
     return (
-        <div>
+        <div id="top-page">
             {/* <div className="designdev">
                 <div>
                     <h1 data-aos="slide-up">עיצוב &</h1>
@@ -52,7 +37,6 @@ const FirstSection = () => {
             </header>
             <div>
                 <h1>daniel.allali12@gmail.com</h1>
-                <h1>{currentTime}</h1>
             </div>
         </div>
     );

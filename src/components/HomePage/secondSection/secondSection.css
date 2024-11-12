@@ -60,18 +60,14 @@
 }
 
 .secondSec > div > p + div h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     background: none;
-    border: 1px solid #868383;
+    border: 2px solid #868383;
     border-radius: 20px;
-    color: white;
+    color: var(--weak);
     padding: 10px;
     margin-bottom: 50px;
     transition: background-color 0.2s;
-}
-
-.secondSec > div > p + div h2:hover {
-    background-color: #868383;
 }
 
 .secondSec > div > div + div {
@@ -198,12 +194,21 @@
     }
 }
 
+@media (max-width: 740px) {
+    .secondSec > div > p + div h2 {
+        font-size: 0.7rem;
+    }
+}
 @media (max-width: 670px) {
     .secondSec > div > div + div img {
         width: 100%;
     }
 }
-
+@media (max-width: 600px) {
+    .secondSec > div > p + div h2 {
+        font-size: 0.5rem;
+    }
+}
 @media (max-width: 480px) {
     .secondSec > div {
         width: 90%;
@@ -227,5 +232,13 @@
 
     .secondSec > div > div + div {
         height: 400px;
+    }
+}
+@media (max-width: 410px) {
+    .secondSec > div > p + div {
+        gap: 5px;
+    }
+    .secondSec > div > p + div h2 {
+        padding: 5px;
     }
 }

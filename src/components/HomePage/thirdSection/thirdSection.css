@@ -36,18 +36,18 @@
     justify-content: center;
     gap: 10px;
 }
-.thirdSec > div > div > div button {
+.thirdSec > div > div > div h2 {
     background: none;
     border: 1px solid var(--strong);
+    font-size: 1rem;
+    font-weight: normal;
     border-radius: 20px;
     color: var(--strong);
     padding: 10px;
     margin-bottom: 50px;
     transition: background-color 0.2s;
 }
-.thirdSec > div > div > div button:hover {
-    background-color: #eee;
-}
+
 .thirdSec > div > div p {
     direction: rtl;
 }
@@ -58,7 +58,23 @@
     background-color: var(--strong);
     height: 1px;
 }
+@media (max-width: 1100px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 0.7rem;
+    }
+}
 
+@media (max-width: 900px) {
+    .thirdSec > div > div > div {
+        gap: 5px;
+    }
+}
+@media (max-width: 860px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 0.5rem;
+        padding: 5px;
+    }
+}
 @media (max-width: 830px) {
     .thirdSec > div > div p {
         font-size: 0.8rem;
@@ -66,6 +82,13 @@
 }
 
 @media (max-width: 700px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .thirdSec > div > div > div {
+        gap: 15px;
+    }
     .thirdSec > div {
         width: 100%;
         flex-direction: column;
@@ -92,5 +115,13 @@
     }
     .thirdSec > div > div h1 {
         font-size: 4rem;
+    }
+}
+@media (max-width: 470px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 0.7rem;
+    }
+    .thirdSec > div > div > div {
+        gap: 10px;
     }
 }

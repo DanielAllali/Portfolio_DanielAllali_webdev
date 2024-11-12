@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./contact.css";
 import "aos/dist/aos.css";
+import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+    const form = useRef();
+
     const [fields, setFields] = useState({
         name: "",
         phone: "",
@@ -28,6 +32,9 @@ const Contact = () => {
             if (v.length > 30) {
                 return "אין סיכוי יש לך שם כזה ארוך...";
             }
+            if (v.length < 1) {
+                return "תכתוב/בי שם.";
+            }
             return null;
         },
         email: (v) => {
@@ -45,12 +52,39 @@ const Contact = () => {
             return null;
         },
     };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const allErrorsNull = Object.values(errs).every(
+            (value) => value === null
+        );
+
+        if (allErrorsNull) {
+            emailjs
+                .sendForm(
+                    "service_lung7g8", // Replace with your service ID
+                    "template_fv8gtzs", // Replace with your template ID
+                    form.current,
+                    "3v6hm1iGwlUPjb8hU" // Replace with your public user ID
+                )
+                .then(
+                    (result) => {
+                        toast.success("הודעה נשלחה בהצלחה!");
+                    },
+                    (error) => {
+                        toast.error(error.text ? error.text : "קרתה תקלה.");
+                    }
+                );
+        } else {
+            toast.error("קודם תתקן/י את השגיאות");
+        }
+    };
     return (
         <div>
             <div>
                 <h1>צור קשר</h1>
                 <p>תשאירו פרטים ואני אחזור אליכם בהקדם!</p>
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <label htmlFor="user_name">השם שלי הוא</label>
                     <input
                         type="text"

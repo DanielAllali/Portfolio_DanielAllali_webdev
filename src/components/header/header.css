@@ -61,7 +61,9 @@
     display: none;
     cursor: pointer;
 }
-
+.header > h2:hover {
+    text-decoration: underline;
+}
 .header nav ul a li {
     color: var(--weak);
     font-size: 1.5rem;
@@ -71,14 +73,16 @@
 .smallNav {
     width: 100vw;
     height: 0;
-
     position: fixed;
     top: 100px;
     left: 0;
-    z-index: 999;
-
+    z-index: 99;
     background-color: var(--strong);
     transition: height 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     display: none;
 }
 
@@ -92,7 +96,7 @@
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    gap: 20px;
+    gap: 10px;
 }
 
 .smallNav ul a {
@@ -100,7 +104,7 @@
 }
 
 .smallNav ul a li:hover {
-    color: #ccc;
+    color: var(--highlight);
 }
 
 .smallNav ul a li {
@@ -114,11 +118,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-bottom: 30px;
     cursor: pointer;
     color: var(--weak);
+    position: relative;
+    z-index: 1;
 }
-
+.smallNav h2:hover {
+    text-decoration: underline;
+}
 .btn {
     width: 220px;
     height: 30px;
@@ -129,7 +137,6 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    font-family: "straight", Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
@@ -155,7 +162,7 @@
     top: 150%;
     left: 0;
     transform: translateY(-50%);
-    color: #ccc;
+    color: var(--highlight);
     font-weight: bold;
 }
 
@@ -166,9 +173,93 @@
 .btn:hover .btn-text-two {
     top: 50%;
 }
+.paste-button {
+    position: relative;
+    display: block;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.button {
+    background: none;
+    color: var(--weak);
+
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.button span {
+    transition: all 0.2s;
+}
+.smallNav .button {
+    font-size: 1.2rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 99999999999999999999999999999999999999999999999999999999999;
+    min-width: 150px;
+    background-color: var(--strong);
+    border: 2px solid var(--highlight);
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+    color: var(--weak);
+    transition: 0.1s;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--highlight);
+    color: #212121;
+}
+
+.dropdown-content a:focus {
+    background-color: #212121;
+    color: var(--highlight);
+}
+
+.dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+}
+
+.dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+}
+
+.paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+}
+.paste-button:hover button span {
+    color: var(--highlight);
+}
+
+.paste-button:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a::before {
+    height: 0 !important;
+    width: 0 !important;
+}
+.dropdown-content a:hover::before {
+    width: 0 !important;
+}
 @media (max-width: 1300px) {
     .header nav ul a li {
+        cursor: pointer;
+    }
+    .dropdown-content a {
         cursor: pointer;
     }
 }
@@ -183,6 +274,6 @@
     }
 
     .smallNav {
-        display: block;
+        display: flex;
     }
 }

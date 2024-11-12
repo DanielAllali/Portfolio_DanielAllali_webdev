@@ -2,17 +2,17 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import "./header.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
-import { Context } from "../../Context";
-
+/* import { Context } from "../../Context";
+ */
 const NavSmall = ({ setDisplay }) => {
-    const { isHijack, setIsHijack } = useContext(Context);
-
+    /*     const { isHijack, setIsHijack } = useContext(Context);
+     */
     const navRef = useRef();
     const ulRef = useRef();
     useEffect(() => {
         if (navRef.current) {
             setTimeout(() => {
-                navRef.current.style.height = "290px";
+                navRef.current.style.height = "320px";
             }, 1);
         }
         AOS.init({ duration: 1000 });
@@ -28,17 +28,34 @@ const NavSmall = ({ setDisplay }) => {
             }, 1000);
         }
     };
-    const changeRoot = () => {
+    /* const changeRoot = () => {
         setIsHijack(false);
         setTimeout(() => {
             setIsHijack(true);
         }, 1000);
-    }
+    } */
     return (
         <div className="smallNav" ref={navRef}>
             <div ref={ulRef}>
+                <h2
+                    aria-label="Close navigation"
+                    data-aos="fade-bottom"
+                    onClick={() => {
+                        handleClose();
+                        /* changeRoot() */
+                    }}
+                >
+                    סגור
+                </h2>
                 <ul>
-                    <a data-aos="fade-left" href="#" onClick={() => { handleClose(); changeRoot(); }}>
+                    <a
+                        data-aos="fade-left"
+                        href="#top-page"
+                        onClick={() => {
+                            handleClose();
+                            /* changeRoot() */
+                        }}
+                    >
                         <li>
                             <button className="btn">
                                 <span className="btn-text-one">בית</span>
@@ -46,26 +63,14 @@ const NavSmall = ({ setDisplay }) => {
                             </button>
                         </li>
                     </a>
+
                     <a
                         data-aos="fade-right"
-                        href="#services"
-                        onClick={() => { handleClose(); changeRoot(); }}
-                    >
-                        <li>
-                            <button className="btn">
-                                <span className="btn-text-one">
-                                    שירותים/אודות
-                                </span>
-                                <span className="btn-text-two">
-                                    שירותים/אודות
-                                </span>
-                            </button>
-                        </li>
-                    </a>
-                    <a
-                        data-aos="fade-left"
                         href="#project"
-                        onClick={() => { handleClose(); changeRoot(); }}
+                        onClick={() => {
+                            handleClose();
+                            /* changeRoot() */
+                        }}
                     >
                         <li>
                             <button className="btn">
@@ -75,9 +80,12 @@ const NavSmall = ({ setDisplay }) => {
                         </li>
                     </a>
                     <a
-                        data-aos="fade-right"
+                        data-aos="fade-left"
                         href="#contact"
-                        onClick={() => { handleClose(); changeRoot(); }}
+                        onClick={() => {
+                            handleClose();
+                            /* changeRoot() */
+                        }}
                     >
                         <li>
                             <button className="btn">
@@ -86,10 +94,56 @@ const NavSmall = ({ setDisplay }) => {
                             </button>
                         </li>
                     </a>
+                    <li data-aos="fade-right">
+                        <div className="paste-button">
+                            <button className="button">
+                                עוד <span>&nbsp;▼</span>
+                            </button>
+                            <div className="dropdown-content">
+                                <a
+                                    id="top"
+                                    href="#services"
+                                    onClick={() => {
+                                        handleClose();
+                                        /* changeRoot() */
+                                    }}
+                                >
+                                    שירותים
+                                </a>
+                                <a
+                                    id="middle"
+                                    href="#project"
+                                    onClick={() => {
+                                        handleClose();
+                                        /* changeRoot() */
+                                    }}
+                                >
+                                    פרוייקט
+                                </a>
+                                <a
+                                    id="middle"
+                                    href="#proccess"
+                                    onClick={() => {
+                                        handleClose();
+                                        /* changeRoot() */
+                                    }}
+                                >
+                                    תהליך
+                                </a>
+                                <a
+                                    id="bottom"
+                                    href="#faq"
+                                    onClick={() => {
+                                        handleClose();
+                                        /* changeRoot() */
+                                    }}
+                                >
+                                    שאלות נפוצות
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-                <h2 data-aos="fade-up" onClick={() => { handleClose(); changeRoot(); }}>
-                    סגור
-                </h2>
             </div>
         </div>
     );

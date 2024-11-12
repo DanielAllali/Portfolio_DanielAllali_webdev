@@ -42,31 +42,50 @@ const Header = () => {
         AOS.init({ duration: 1000 });
     }, []);
 
-    const changeRoot = () => {
+    /*  const changeRoot = () => {
         setIsHijack(false);
         setTimeout(() => {
             setIsHijack(true);
         }, 1000);
     };
-
+ */
     return (
         <>
             <div ref={header} className="header">
                 <h1 data-aos="fade-right">Daniel Allali</h1>
                 <nav>
                     <ul>
-                        <a href="#" onClick={changeRoot}>
+                        <a href="#top-page" /* onClick={changeRoot} */>
                             <li>בית</li>
                         </a>
-                        <a href="#services" onClick={changeRoot}>
-                            <li>שירותים/אודות</li>
+
+                        <a href="#about" /* onClick={changeRoot} */>
+                            <li>אודות</li>
                         </a>
-                        <a href="#project" onClick={changeRoot}>
-                            <li>פרוייקט</li>
-                        </a>
-                        <a href="#contact" onClick={changeRoot}>
+                        <a href="#contact" /* onClick={changeRoot} */>
                             <li>צור קשר</li>
                         </a>
+                        <li>
+                            <div className="paste-button">
+                                <button className="button">
+                                    עוד <span>&nbsp;▼</span>
+                                </button>
+                                <div className="dropdown-content">
+                                    <a id="top" href="#services">
+                                        שירותים
+                                    </a>
+                                    <a id="middle" href="#project">
+                                        פרוייקט
+                                    </a>
+                                    <a id="middle" href="#proccess">
+                                        תהליך
+                                    </a>
+                                    <a id="bottom" href="#faq">
+                                        שאלות נפוצות
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
                 <h2

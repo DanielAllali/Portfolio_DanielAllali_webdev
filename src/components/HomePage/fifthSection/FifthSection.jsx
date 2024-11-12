@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./fifthSection.css";
-import websiteVideo from "../../../media/images/websiteVideo2.mp4";
+import websiteVideo from "../../../media/images/websiteVideo.mp4";
 import techVideo from "../../../media/images/techVideo.mp4";
 import personalityVideo from "../../../media/images/personalityVideo.mp4";
 

@@ -4,6 +4,7 @@ import ForthSection from "./components/HomePage/forthSection/ForthSection";
 import { useSelector } from "react-redux";
 
 import Home from "./components/HomePage/Home";
+import { Toaster } from "react-hot-toast";
 
 function App() {
     const theme = useSelector((state) => state.webSlice.theme);
@@ -18,6 +19,7 @@ function App() {
                 "--highlight_strong": theme.highlight_strong,
             }}
         >
+            <Toaster />
             <CustomCursor />
             <Home />
         </div>

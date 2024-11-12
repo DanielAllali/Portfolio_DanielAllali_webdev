@@ -28,7 +28,7 @@ const Home = () => {
                 <SecondSection />
                 <ul>
                     <li>
-                        <h1>
+                        <h1 id="about">
                             <div></div>מי אני
                         </h1>
                         <p>
