@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import "./header.css";
-import "aos/dist/aos.css";
-import AOS from "aos";
+
 /* import { Context } from "../../Context";
  */
 const NavSmall = ({ setDisplay }) => {
@@ -15,7 +14,6 @@ const NavSmall = ({ setDisplay }) => {
                 navRef.current.style.height = "320px";
             }, 1);
         }
-        AOS.init({ duration: 1000 });
     }, []);
     const handleClose = () => {
         if (navRef.current && ulRef.current) {
@@ -50,7 +48,7 @@ const NavSmall = ({ setDisplay }) => {
                 <ul>
                     <a
                         data-aos="fade-left"
-                        href="#top-page"
+                        href="#"
                         onClick={() => {
                             handleClose();
                             /* changeRoot() */
@@ -118,20 +116,10 @@ const NavSmall = ({ setDisplay }) => {
                                         /* changeRoot() */
                                     }}
                                 >
-                                    פרוייקט
+                                    דף לדוגמה
                                 </a>
                                 <a
                                     id="middle"
-                                    href="#proccess"
-                                    onClick={() => {
-                                        handleClose();
-                                        /* changeRoot() */
-                                    }}
-                                >
-                                    תהליך
-                                </a>
-                                <a
-                                    id="bottom"
                                     href="#faq"
                                     onClick={() => {
                                         handleClose();
@@ -139,6 +127,26 @@ const NavSmall = ({ setDisplay }) => {
                                     }}
                                 >
                                     שאלות נפוצות
+                                </a>
+                                <a
+                                    id="middle"
+                                    href="#whyMe"
+                                    onClick={() => {
+                                        handleClose();
+                                        /* changeRoot() */
+                                    }}
+                                >
+                                    למה אני
+                                </a>
+                                <a
+                                    id="bottom"
+                                    href="#proccess"
+                                    onClick={() => {
+                                        handleClose();
+                                        /* changeRoot() */
+                                    }}
+                                >
+                                    תהליך
                                 </a>
                             </div>
                         </div>

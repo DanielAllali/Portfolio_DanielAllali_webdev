@@ -1,12 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./firstSection.css";
-import "aos/dist/aos.css";
-import AOS from "aos";
 
 const FirstSection = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
     return (
         <div id="top-page">
             {/* <div className="designdev">
@@ -27,8 +22,12 @@ const FirstSection = () => {
             <header>
                 <div className="designdev"></div>
                 <div className="myName">
-                    <h1 data-aos="slide-up">דניאל</h1>
-                    <h1 data-aos="slide-up">אלאלי</h1>
+                    <h1 data-aos="fade-left" data-aos-duration="2000">
+                        דניאל
+                    </h1>
+                    <h1 data-aos="fade-right" data-aos-duration="2000">
+                        אלאלי
+                    </h1>
                     <p>
                         אני עוזר לחבר בין עסקים ללקוחות ולהניע צמיחה עם עיצוב
                         אלגנטי ויעיל
@@ -36,6 +35,7 @@ const FirstSection = () => {
                 </div>
             </header>
             <div>
+                <i className="bi bi-arrow-down-short"></i>
                 <h1>daniel.allali12@gmail.com</h1>
             </div>
         </div>

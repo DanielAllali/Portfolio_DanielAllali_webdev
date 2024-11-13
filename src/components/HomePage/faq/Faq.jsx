@@ -50,7 +50,7 @@ const Faq = () => {
     return (
         <div className="faqs">
             <h1 data-aos="fade-right">יש שאלות?</h1>
-            <ul data-aos="fade-left">
+            <ul data-aos="fade-right">
                 {faqData.map(({ key, he, heAnswer }) => (
                     <li key={key} className={openFaqs[key] ? "expanded" : ""}>
                         <div>

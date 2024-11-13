@@ -4,8 +4,6 @@ import img1 from "../../../media/images/img1.jpg";
 import img2 from "../../../media/images/img2.jpg";
 import img3 from "../../../media/images/img3.jpg";
 import img4 from "../../../media/images/img4.jpg";
-import "aos/dist/aos.css";
-import AOS from "aos";
 
 const SecondSection = () => {
     const img1Ref = useRef();
@@ -16,7 +14,6 @@ const SecondSection = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", handleImages);
-        AOS.init({ duration: 1000 });
     }, []);
     const handleImages = () => {
         try {

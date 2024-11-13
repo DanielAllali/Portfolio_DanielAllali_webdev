@@ -15,12 +15,14 @@ const Arrow = () => {
         window.addEventListener("scroll", scrollChange);
     }, []);
     return (
-        <a href="#">
-            <div className="arrow">
-                <i className={`bi bi-caret-${isUp ? "up" : "down"}-fill`}></i>
-                למעלה
-            </div>
-        </a>
+        isUp && (
+            <a href="#">
+                <div className="arrow">
+                    <i className={`bi bi-caret-up-fill`}></i>
+                    למעלה
+                </div>
+            </a>
+        )
     );
 };
 

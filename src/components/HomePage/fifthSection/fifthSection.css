@@ -52,6 +52,7 @@
     justify-content: center;
     overflow: hidden;
     background-color: var(--highlight);
+    position: relative;
 
     order: 1;
 }
@@ -95,6 +96,19 @@
 .fifthSec > div > div > div video {
     width: 80%;
 }
+.fifthSec > div > div > div button.stopVideoButton {
+    background: none;
+    border: none;
+    color: var(--weak);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+}
+.fifthSec > div > div > div button.stopVideoButton:hover {
+    font-size: 1.5rem;
+}
 .fifthSec > div > div > div h1 {
     font-size: 2.5rem;
     color: var(--strong);
@@ -102,6 +116,11 @@
 
 .fifthSec > div > div > div p {
     direction: rtl;
+}
+@media (max-width: 1300px) {
+    .fifthSec > div > div > div button.stopVideoButton {
+        cursor: pointer;
+    }
 }
 @media (max-width: 990px) {
     .fifthSec > div > div {
@@ -139,5 +158,11 @@
     }
     .fifthSec > div > div > div.textDiv {
         height: 300px;
+    }
+    .fifthSec > div > div > div button.stopVideoButton {
+        font-size: 0.7rem;
+    }
+    .fifthSec > div > div > div button.stopVideoButton:hover {
+        font-size: 0.7rem;
     }
 }

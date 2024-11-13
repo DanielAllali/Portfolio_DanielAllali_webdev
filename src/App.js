@@ -5,9 +5,19 @@ import { useSelector } from "react-redux";
 
 import Home from "./components/HomePage/Home";
 import { Toaster } from "react-hot-toast";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import { useEffect } from "react";
 
 function App() {
     const theme = useSelector((state) => state.webSlice.theme);
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+        });
+    }, []);
     return (
         <div
             className="App"

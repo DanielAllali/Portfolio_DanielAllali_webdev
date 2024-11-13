@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import "./header.css";
 import NavSmall from "./NavSmall";
-import "aos/dist/aos.css";
-import AOS from "aos";
 import { Context } from "../../Context";
 
 const Header = () => {
@@ -38,10 +36,6 @@ const Header = () => {
         }
     }, [visible]);
 
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
-
     /*  const changeRoot = () => {
         setIsHijack(false);
         setTimeout(() => {
@@ -55,7 +49,7 @@ const Header = () => {
                 <h1 data-aos="fade-right">Daniel Allali</h1>
                 <nav>
                     <ul>
-                        <a href="#top-page" /* onClick={changeRoot} */>
+                        <a href="#" /* onClick={changeRoot} */>
                             <li>בית</li>
                         </a>
 
@@ -75,13 +69,16 @@ const Header = () => {
                                         שירותים
                                     </a>
                                     <a id="middle" href="#project">
-                                        פרוייקט
+                                        דף לדוגמה
                                     </a>
-                                    <a id="middle" href="#proccess">
-                                        תהליך
-                                    </a>
-                                    <a id="bottom" href="#faq">
+                                    <a id="middle" href="#faq">
                                         שאלות נפוצות
+                                    </a>
+                                    <a id="middle" href="#whyMe">
+                                        למה אני
+                                    </a>
+                                    <a id="bottom" href="#proccess">
+                                        תהליך
                                     </a>
                                 </div>
                             </div>

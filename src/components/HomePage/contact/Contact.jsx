@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./contact.css";
-import "aos/dist/aos.css";
 import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
+import SocialBtns from "./SocialBtns";
 
 const Contact = () => {
     const form = useRef();
@@ -116,8 +116,24 @@ const Contact = () => {
                     />
                     {errs.email && <h2>{errs.email}</h2>}
 
-                    <input type="submit" id="submitBtn" value="שלח" />
+                    <input
+                        aria-label="שלח"
+                        title="שלח"
+                        type="submit"
+                        id="submitBtn"
+                        value="שלח"
+                    />
                 </form>
+                <div id="contactDirecly">
+                    <h1>צרו קשר ישירות</h1>
+                    <div>
+                        <SocialBtns />
+                        <div>
+                            <h2>daniel.allali12@gmail.com</h2>
+                            <h2>050-658-1406</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

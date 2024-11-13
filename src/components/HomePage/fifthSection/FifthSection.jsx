@@ -1,12 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./fifthSection.css";
 import websiteVideo from "../../../media/images/websiteVideo.mp4";
 import techVideo from "../../../media/images/techVideo.mp4";
 import personalityVideo from "../../../media/images/personalityVideo.mp4";
 
 const FifthSection = () => {
+    const techVideoRef = useRef(null);
+    const websiteVideoRef = useRef(null);
+    const personalityVideoRef = useRef(null);
+
+    const [videosStop, setVideosStop] = useState({
+        tech: "play",
+        website: "play",
+        personality: "play",
+    });
+
+    const handleToggleStop = (video, videoName) => {
+        if (video.current) {
+            if (videosStop[videoName] && videosStop[videoName] === "play") {
+                video.current.pause();
+                setVideosStop({ ...videosStop, [videoName]: "stop" });
+                return;
+            }
+            if (videosStop[videoName] && videosStop[videoName] === "stop") {
+                video.current.play();
+                setVideosStop({ ...videosStop, [videoName]: "play" });
+                return;
+            }
+        }
+    };
     return (
-        <div>
+        <div id="whyMe">
             <div>
                 <h1 data-aos="fade-up">
                     למה <span>אני?</span>
@@ -14,7 +38,26 @@ const FifthSection = () => {
             </div>
             <div>
                 <div>
-                    <video autoPlay muted loop src={websiteVideo}></video>
+                    <video
+                        ref={websiteVideoRef}
+                        autoPlay
+                        muted
+                        loop
+                        src={websiteVideo}
+                    ></video>
+                    <button
+                        className="stopVideoButton"
+                        aria-label="toggle stop video button"
+                        onClick={() => {
+                            handleToggleStop(websiteVideoRef, "website");
+                        }}
+                    >
+                        {videosStop["website"] === "play" ? (
+                            <i className="bi bi-pause-fill"></i>
+                        ) : (
+                            <i className="bi bi-play-fill"></i>
+                        )}
+                    </button>
                 </div>
                 <div data-aos="fade-left" className="textDiv">
                     <h1>דפי נחיתה</h1>
@@ -28,7 +71,26 @@ const FifthSection = () => {
             </div>
             <div>
                 <div>
-                    <video autoPlay muted loop src={techVideo}></video>
+                    <video
+                        ref={techVideoRef}
+                        autoPlay
+                        muted
+                        loop
+                        src={techVideo}
+                    ></video>
+                    <button
+                        className="stopVideoButton"
+                        aria-label="toggle stop video button"
+                        onClick={() => {
+                            handleToggleStop(techVideoRef, "tech");
+                        }}
+                    >
+                        {videosStop["tech"] === "play" ? (
+                            <i className="bi bi-pause-fill"></i>
+                        ) : (
+                            <i className="bi bi-play-fill"></i>
+                        )}
+                    </button>
                 </div>
                 <div data-aos="fade-right" className="textDiv">
                     <h1>פלטפורמות & כלים טכנולוגיים</h1>
@@ -47,7 +109,29 @@ const FifthSection = () => {
             </div>
             <div>
                 <div>
-                    <video autoPlay muted loop src={personalityVideo}></video>
+                    <video
+                        ref={personalityVideoRef}
+                        autoPlay
+                        muted
+                        loop
+                        src={personalityVideo}
+                    ></video>
+                    <button
+                        className="stopVideoButton"
+                        aria-label="toggle stop video button"
+                        onClick={() => {
+                            handleToggleStop(
+                                personalityVideoRef,
+                                "personality"
+                            );
+                        }}
+                    >
+                        {videosStop["personality"] === "play" ? (
+                            <i className="bi bi-pause-fill"></i>
+                        ) : (
+                            <i className="bi bi-play-fill"></i>
+                        )}
+                    </button>
                 </div>
                 <div data-aos="fade-left" className="textDiv">
                     <h1>איכות ומקצועיות</h1>
