@@ -60,12 +60,22 @@ const FifthSection = () => {
                     </button>
                 </div>
                 <div data-aos="fade-left" className="textDiv">
-                    <h1>דפי נחיתה</h1>
+                    <h1>מומחיות</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Vitae minus dolorum temporibus doloribus beatae
-                        cum atque harum repudiandae, id quaerat veritatis
-                        perspiciatis odio. Odit, molestiae!
+                        <span>מקצועיות</span> - הכשרה וידע רחב בבניית אתרים ודפי
+                        נחיתה
+                        <br />
+                        <span>שירות</span> - התאמה מלאה לצרכי הלקוח, סבלנות
+                        וליווי אישי
+                        <br />
+                        <span>התאמה לחוקי הנגישות</span> - העבודות עומדים בכל
+                        הרגולציה הרלוונטית
+                        <br />
+                        <span>עמידה בלוחות זמנים</span> - אין מה להוסיף...
+                        <br />
+                        <span>אחריות</span> - העבודות יוצאות ללקוח לאחר מגוון של
+                        בקרות. ניתנת אחריות מלאה על העבודות
+                        <br />
                     </p>
                 </div>
             </div>
@@ -93,18 +103,20 @@ const FifthSection = () => {
                     </button>
                 </div>
                 <div data-aos="fade-right" className="textDiv">
-                    <h1>פלטפורמות & כלים טכנולוגיים</h1>
+                    <h1>טכנולוגיה</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corrupti necessitatibus ipsa odio quaerat reprehenderit
-                        soluta perspiciatis nam recusandae et. Corrupti nemo
-                        quia dolorum temporibus eum.
+                        <span>שפות תכנות</span> - React JS, HTML, CSS
+                        <br />
+                        <span>גמישות מלאה</span> - כתיבה בקוד (בשונה
+                        מ-Wordpress, Wix וכדומה...) לצורך הגעה לתוצאה האופטימלית
+                        ללא פשרות
+                        <br />
+                        <span>מהירות</span> - מאחר והכתיבה בקוד מותאמת "כמו
+                        כפפה" ללקוח, לא קיימים תוספים המכבידים על האתר
+                        <br />
+                        <span>יציבות</span> - האתר אמין לאורך זמן ואינו סובל
+                        מ"נפילות"
                     </p>
-                    <div>
-                        <h2>React JS</h2>
-                        <h2>HTML</h2>
-                        <h2>CSS</h2>
-                    </div>
                 </div>
             </div>
             <div>
@@ -134,19 +146,36 @@ const FifthSection = () => {
                     </button>
                 </div>
                 <div data-aos="fade-left" className="textDiv">
-                    <h1>איכות ומקצועיות</h1>
+                    <h1>
+                        מדוע אני משתמש בקוד<span>?</span>
+                    </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corrupti necessitatibus ipsa odio quaerat reprehenderit
-                        soluta perspiciatis nam recusandae et. Corrupti nemo
-                        quia dolorum temporibus eum.
-                    </p>
-                    <h1>אישיות</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Vitae minus dolorum temporibus doloribus beatae
-                        cum atque harum repudiandae, id quaerat veritatis
-                        perspiciatis odio. Odit, molestiae!
+                        קיימות 2 שיטות עיקריות לתכנות אתרים - כתיבה בקוד ובניית
+                        אתר באמצעות תבנית.
+                        <br /> בפרק להלן אסביר את הסיבות העיקריות לשימוש בקוד:
+                        <br />
+                        <span>גמישות </span> - גמישות גבוהה ובנייה בהתאם לצרכי
+                        הלקוח, לעומת גמישות מוגבלת ושימוש בתבניות המגיעות AS IS
+                        <br />
+                        <span>בידול </span> - עיצוב ייחודי ומבדל, לעומת עיצוב
+                        הדומה לאתרים אחרים <br />
+                        <span>קידום אורגני </span> - ה- SEO (Search Engine
+                        Optimization) יעיל יותר בשימוש בקוד, באופן שקידום האתר
+                        באופן אורגני טובה יותר
+                        <br />
+                        <span>מהירות </span> - ביצועי האתר גבוהים בקוד, לעומת
+                        תבניות המכילות פיצ'רים מובנים שאין בהם שימוש, דבר המכביד
+                        על ביצועי האתר <br />
+                        <span>קלות השימוש </span> - נוחות הלקוח גבוהה יותר, שכן
+                        האתר ניבנה מראש לפי דרישות הלקוח ובידיעה שהלקוח יעבוד עם
+                        האתר בהמשך
+                        <br />
+                        <span>צמיחה </span> - האתר יותאם לעקומת הצמיחה העסקית של
+                        הלקוח וההתאמות יעשו בקלות
+                        <br />
+                        <span>פיצ'רים </span> - יכולת הטמעת פיצ'רים באתר <br />
+                        <span>ממשקים </span> - אינטגרציה קלה לכל כלי חיצוני,
+                        לעומת מגבלות בשימוש בתבנית וריבוי באגים
                     </p>
                 </div>
             </div>

@@ -57,16 +57,42 @@ const SecondSection = () => {
     return (
         <div id="services">
             <h1 data-aos="fade-up">שירותים</h1>
-            <p>
+            {/* <p>
                 בזכות יכולות העיצוב וחוויית המשתמש שאני מביא,
                 <br /> אני מצליח להמציא את עצמי מחדש בכל פרויקט ולהביא תוצאה
                 חדשנית ויצירתית בכל פעם.
+            </p> */}
+            {/* <p>
+                חדשנות<span>.</span> יצירתיות<span>.</span> פונקציונליות
+                <span>.</span> עיצוב חכם.
+                <br />
+                בכל פרויקט מחדש
+            </p> */}
+            <p>
+                חדשנות
+                <span>
+                    <i class="bi bi-square-fill"></i>
+                </span>{" "}
+                יצירתיות
+                <span>
+                    <i class="bi bi-square-fill"></i>
+                </span>{" "}
+                פונקציונליות
+                <span>
+                    <i class="bi bi-square-fill"></i>
+                </span>{" "}
+                עיצוב חכם
+                <span>
+                    <i class="bi bi-square-fill"></i>
+                </span>
+                <br />
+                בכל פרויקט מחדש
             </p>
             <div>
-                <h2>מעוצב אישית</h2>
+                <h2>יעילות</h2>
+                <h2>שירות אישי</h2>
                 <h2>דפי נחיתה</h2>
-                <h2>התאמה לכל גדלי המסכים</h2>
-                <h2>מהירות</h2>
+                <h2>אתרי אינטרנט</h2>
             </div>
             <div>
                 <img ref={img1Ref} src={img1} alt="image" />

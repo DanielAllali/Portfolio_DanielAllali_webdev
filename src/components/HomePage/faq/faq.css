@@ -5,12 +5,14 @@
         rgba(248, 245, 239, 1) 25%,
         rgba(253, 253, 241, 1) 60%
     );
+    text-align: right;
 }
+
 .faqs {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
     padding: 50px;
 }
@@ -19,15 +21,21 @@
 }
 .faqs h1 {
     width: 50vw;
-    height: 70vh;
     display: block;
     padding: 20px;
     font-family: "IBM_Plex_Sans", "Franklin Gothic Medium", "Arial Narrow",
         Arial, sans-serif;
     font-size: 3rem;
     direction: rtl;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
+    gap: 5px;
+}
+.faqs h1 span {
+    color: var(--highlight);
+}
 .faqs ul {
     width: 50vw;
     display: flex;
@@ -51,9 +59,7 @@
     0% {
         max-height: 65px;
     }
-    50% {
-        max-height: 220px;
-    }
+
     100% {
         max-height: 200px;
     }
@@ -81,7 +87,12 @@
 .faqs ul li h2 {
     font-size: 1.2rem;
 }
-
+.faqs ul li * {
+    direction: rtl;
+}
+.faqs ul li p {
+    text-align: right;
+}
 .faqs ul li:last-child div {
     font-size: 1.8rem;
 }

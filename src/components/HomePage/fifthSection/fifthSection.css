@@ -112,10 +112,19 @@
 .fifthSec > div > div > div h1 {
     font-size: 2.5rem;
     color: var(--strong);
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
-
+.fifthSec > div > div > div h1 span {
+    color: var(--highlight);
+}
 .fifthSec > div > div > div p {
     direction: rtl;
+}
+.fifthSec > div > div > div p span {
+    color: var(--highlight);
+    font-weight: bold;
 }
 @media (max-width: 1300px) {
     .fifthSec > div > div > div button.stopVideoButton {

@@ -83,9 +83,9 @@ const Contact = () => {
         <div>
             <div>
                 <h1>צור קשר</h1>
-                <p>תשאירו פרטים ואני אחזור אליכם בהקדם!</p>
+                <p>השאירו פרטים ואחזור אליכם בהקדם</p>
                 <form ref={form} onSubmit={sendEmail}>
-                    <label htmlFor="user_name">השם שלי הוא</label>
+                    <label htmlFor="user_name">שם מלא</label>
                     <input
                         type="text"
                         id="user_name"
@@ -95,7 +95,7 @@ const Contact = () => {
                         onChange={handleChange}
                     />
                     {errs.name && <h2>{errs.name}</h2>}
-                    <label htmlFor="phone_number">מספר הטלפון שלי</label>
+                    <label htmlFor="phone_number">טלפון</label>
                     <input
                         type="phone"
                         id="phone_number"
@@ -105,7 +105,7 @@ const Contact = () => {
                     />
                     {errs.phone && <h2>{errs.phone}</h2>}
 
-                    <label htmlFor="user_email">האימייל שלי@</label>
+                    <label htmlFor="user_email">דוא"ל</label>
                     <input
                         type="email"
                         id="user_email"

@@ -21,13 +21,26 @@
     align-items: end;
     justify-content: end;
     padding: 50px;
+    padding-bottom: 0;
 }
 .thirdSec > div > div img {
     width: 200px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    animation: rotation 20s infinite ease-in-out;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .thirdSec > div > div h1 {
     font-family: "humane";
     font-size: 5rem;
+    margin-bottom: 15px;
 }
 .thirdSec > div > div > div {
     display: flex;
@@ -50,9 +63,13 @@
 
 .thirdSec > div > div p {
     direction: rtl;
+    font-weight: bold;
 }
 .thirdSec > div > div > a button {
     color: var(--strong);
+    margin-bottom: 0;
+    margin-top: 100px;
+    font-size: 1.3rem;
 }
 .thirdSec > div > div > a button::after {
     background-color: var(--strong);
