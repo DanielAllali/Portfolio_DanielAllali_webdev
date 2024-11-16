@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./home.css";
 import Header from "../header/Header";
 import FirstSection from "./firstSection/FirstSection";
@@ -14,10 +14,29 @@ import SeventhSection from "./seventhSection/SeventhSection.jsx";
 import Footer from "./footer/Footer.jsx";
 import Faq from "./faq/Faq.jsx";
 import myImage from "../../media/images/myImage.jpg";
+import myImage2 from "../../media/images/myImage2.jpg";
 
 const Home = () => {
     const { isHijack, setIsHijack } = useContext(Context);
+    const [imageSrc, setImageSrc] = useState(myImage);
 
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 1000) {
+                setImageSrc(myImage2);
+            } else {
+                setImageSrc(myImage);
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return (
         <div className="home">
             <Header />
@@ -49,14 +68,14 @@ const Home = () => {
                                 </button>
                             </a>
                         </div>
-                        <img src={myImage} alt="My image" />
+                        <img src={imageSrc} alt="My image" />
                     </li>
                 </ul>
             </section>
 
             {/* <section className="forthSec">
-                {isHijack && <ForthSection />}
-            </section> */}
+                    {isHijack && <ForthSection />}
+                </section> */}
             <section className="fifthSec">
                 <FifthSection />
             </section>

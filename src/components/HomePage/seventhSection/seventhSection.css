@@ -5,7 +5,12 @@
     justify-content: center;
     padding: 50px;
     direction: rtl;
-    background-color: #f8f5ef;
+    background: #f8f5ef;
+    background: linear-gradient(
+        180deg,
+        rgba(248, 245, 239, 1) 25%,
+        rgba(253, 253, 241, 1) 60%
+    );
 }
 .seventhSection * {
     color: var(--strong);

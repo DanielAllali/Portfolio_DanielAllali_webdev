@@ -2,7 +2,10 @@
     font-family: "humane";
     src: url("./media/fonts/HUMANE-Typeface/OpenType-PS/Humane-SemiBold.otf");
 }
-
+@font-face {
+    font-family: "humaneLight";
+    src: url("./media/fonts/HUMANE-Typeface/OpenType-PS/Humane-Thin.otf");
+}
 @font-face {
     font-family: "rubik";
     src: url("./media/fonts/Rubik/Rubik-VariableFont_wght.ttf");
@@ -48,7 +51,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {

@@ -68,17 +68,17 @@ const Header = () => {
                                     <a id="top" href="#services">
                                         שירותים
                                     </a>
-                                    <a id="middle" href="#project">
-                                        דף לדוגמה
-                                    </a>
-                                    <a id="middle" href="#faq">
-                                        שאלות נפוצות
-                                    </a>
                                     <a id="middle" href="#whyMe">
                                         למה אני
                                     </a>
-                                    <a id="bottom" href="#proccess">
+                                    <a id="middle" href="#proccess">
                                         תהליך
+                                    </a>
+                                    <a id="middle" href="#project">
+                                        דף לדוגמה
+                                    </a>
+                                    <a id="bottom" href="#faq">
+                                        שאלות נפוצות
                                     </a>
                                 </div>
                             </div>

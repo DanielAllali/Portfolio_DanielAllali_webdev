@@ -33,7 +33,7 @@ const FifthSection = () => {
         <div id="whyMe">
             <div>
                 <h1 data-aos="fade-up">
-                    למה <span>אני?</span>
+                    למה אני<span>?</span>
                 </h1>
             </div>
             <div>
@@ -43,8 +43,11 @@ const FifthSection = () => {
                         autoPlay
                         muted
                         loop
-                        src={websiteVideo}
-                    ></video>
+                        playsInline
+                    >
+                        <source src={websiteVideo} type="video/mp4" />
+                        Your browser does not support the video.
+                    </video>
                     <button
                         className="stopVideoButton"
                         aria-label="toggle stop video button"
@@ -81,13 +84,10 @@ const FifthSection = () => {
             </div>
             <div>
                 <div>
-                    <video
-                        ref={techVideoRef}
-                        autoPlay
-                        muted
-                        loop
-                        src={techVideo}
-                    ></video>
+                    <video ref={techVideoRef} autoPlay muted loop playsInline>
+                        <source src={techVideo} type="video/mp4" />
+                        Your browser does not support the video.
+                    </video>
                     <button
                         className="stopVideoButton"
                         aria-label="toggle stop video button"
@@ -126,8 +126,11 @@ const FifthSection = () => {
                         autoPlay
                         muted
                         loop
-                        src={personalityVideo}
-                    ></video>
+                        playsInline
+                    >
+                        <source src={personalityVideo} type="video/mp4" />
+                        Your browser does not support the video.
+                    </video>
                     <button
                         className="stopVideoButton"
                         aria-label="toggle stop video button"

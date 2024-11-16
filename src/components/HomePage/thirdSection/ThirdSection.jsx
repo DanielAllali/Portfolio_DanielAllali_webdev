@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./thirdSection.css";
 import gymImg from "../../../media/images/ProActive_logo_circle.png";
 import gymVideo from "../../../media/images/project_video.mp4";
 
 const ThirdSection = () => {
+    const videoRef = useRef(null);
+    const [videoPlay, setVideoPlay] = useState(true);
+
+    const handleToggleStop = () => {
+        if (videoRef.current) {
+            if (videoPlay) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setVideoPlay(!videoPlay);
+        }
+    };
+
     return (
         <div>
             <div id="project">
@@ -36,10 +50,23 @@ const ThirdSection = () => {
                     <button className="underlineBtn">לאתר</button>
                 </a>
             </div>
-            <video autoPlay muted loop>
-                <source src={gymVideo} type="video/mp4" />
-                Your browser does not support the video.
-            </video>
+            <div className="videoDiv">
+                <video ref={videoRef} autoPlay muted loop playsInline>
+                    <source src={gymVideo} type="video/mp4" />
+                    Your browser does not support the video.
+                </video>
+                <button
+                    className="stopVideoButton"
+                    aria-label="toggle stop video button"
+                    onClick={handleToggleStop}
+                >
+                    {videoPlay ? (
+                        <i className="bi bi-pause-fill"></i>
+                    ) : (
+                        <i className="bi bi-play-fill"></i>
+                    )}
+                </button>
+            </div>
         </div>
     );
 };

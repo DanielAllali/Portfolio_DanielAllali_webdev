@@ -72,15 +72,15 @@ const SecondSection = () => {
                 חדשנות
                 <span>
                     <i class="bi bi-square-fill"></i>
-                </span>{" "}
+                </span>
                 יצירתיות
                 <span>
                     <i class="bi bi-square-fill"></i>
-                </span>{" "}
+                </span>
                 פונקציונליות
                 <span>
                     <i class="bi bi-square-fill"></i>
-                </span>{" "}
+                </span>
                 עיצוב חכם
                 <span>
                     <i class="bi bi-square-fill"></i>

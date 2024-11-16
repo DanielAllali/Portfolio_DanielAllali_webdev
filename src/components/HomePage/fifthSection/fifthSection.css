@@ -16,6 +16,7 @@
     color: var(--highlight);
     font-size: 5rem;
 }
+
 .fifthSec > div > div:first-child {
     height: auto;
     padding: 50px;
@@ -27,6 +28,9 @@
 .fifthSec > div > div:first-child h1 {
     font-size: 3rem;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 .fifthSec > div > div:first-child h1 span {
     color: var(--highlight);
@@ -148,6 +152,9 @@
         height: 300px;
         order: 2 !important;
     }
+    .fifthSec > div > div > div.textDiv p {
+        font-size: 0.7rem;
+    }
 }
 @media (max-width: 480px) {
     .fifthSec > div > div {
@@ -173,5 +180,10 @@
     }
     .fifthSec > div > div > div button.stopVideoButton:hover {
         font-size: 0.7rem;
+    }
+}
+@media (max-width: 400px) {
+    .fifthSec > div > div > div.textDiv p {
+        font-size: 0.5rem;
     }
 }

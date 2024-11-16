@@ -155,6 +155,7 @@
 }
 
 .secondSec > ul li {
+    width: 100%;
     color: var(--weak);
     display: flex;
     flex-direction: row;
@@ -218,7 +219,14 @@
         width: 50%;
     }
 }
-
+@media (max-width: 770px) {
+    .secondSec > ul {
+        width: 100vw;
+    }
+    .secondSec > ul li div p {
+        font-size: 0.7rem;
+    }
+}
 @media (max-width: 740px) {
     .secondSec > div > p + div h2 {
         font-size: 0.7rem;
@@ -232,9 +240,11 @@
 @media (max-width: 600px) {
     .secondSec > div > p + div h2 {
         font-size: 0.5rem;
+        font-weight: normal;
     }
 }
-@media (max-width: 480px) {
+
+@media (max-width: 520px) {
     .secondSec > div {
         width: 90%;
     }
@@ -259,11 +269,20 @@
         height: 400px;
     }
 }
+
 @media (max-width: 410px) {
     .secondSec > div > p + div {
         gap: 5px;
     }
     .secondSec > div > p + div h2 {
         padding: 5px;
+    }
+}
+@media (max-width: 400px) {
+    .secondSec > ul li div h1 {
+        font-size: 1.5rem;
+    }
+    .secondSec > ul li div p {
+        font-size: 0.5rem;
     }
 }

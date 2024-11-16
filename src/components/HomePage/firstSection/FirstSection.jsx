@@ -36,7 +36,7 @@ const FirstSection = () => {
             </header>
             <div>
                 <i className="bi bi-arrow-down-short"></i>
-                <h1>daniel.allali12@gmail.com</h1>
+                <h1>info@daniel-allali.com</h1>
             </div>
         </div>
     );

@@ -6,6 +6,7 @@ import SocialBtns from "./SocialBtns";
 
 const Contact = () => {
     const form = useRef();
+    const [isLoading, setIsLoading] = useState(false);
 
     const [fields, setFields] = useState({
         name: "",
@@ -60,9 +61,10 @@ const Contact = () => {
         );
 
         if (allErrorsNull) {
+            setIsLoading(true);
             emailjs
                 .sendForm(
-                    "service_lung7g8", // Replace with your service ID
+                    "service_9iussx6", // Replace with your service ID
                     "template_fv8gtzs", // Replace with your template ID
                     form.current,
                     "3v6hm1iGwlUPjb8hU" // Replace with your public user ID
@@ -70,9 +72,11 @@ const Contact = () => {
                 .then(
                     (result) => {
                         toast.success("הודעה נשלחה בהצלחה!");
+                        setIsLoading(false);
                     },
                     (error) => {
                         toast.error(error.text ? error.text : "קרתה תקלה.");
+                        setIsLoading(false);
                     }
                 );
         } else {
@@ -100,7 +104,7 @@ const Contact = () => {
                         type="phone"
                         id="phone_number"
                         name="phone"
-                        placeholder="050-658-1406"
+                        placeholder="050-123-4567"
                         onChange={handleChange}
                     />
                     {errs.phone && <h2>{errs.phone}</h2>}
@@ -111,7 +115,7 @@ const Contact = () => {
                         id="user_email"
                         name="email"
                         required
-                        placeholder="daniel.allali12@gmail.com"
+                        placeholder="info@daniel-allali.com"
                         onChange={handleChange}
                     />
                     {errs.email && <h2>{errs.email}</h2>}
@@ -129,12 +133,17 @@ const Contact = () => {
                     <div>
                         <SocialBtns />
                         <div>
-                            <h2>daniel.allali12@gmail.com</h2>
-                            <h2>050-658-1406</h2>
+                            <h2>info@daniel-allali.com</h2>
+                            <h2>daniel@daniel-allali.com</h2>
                         </div>
                     </div>
                 </div>
             </div>
+            {isLoading && (
+                <div id="loader">
+                    <div></div>
+                </div>
+            )}
         </div>
     );
 };

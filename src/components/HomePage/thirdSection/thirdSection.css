@@ -8,9 +8,26 @@
     align-items: center;
     justify-content: space-between;
 }
-.thirdSec > div video {
+.thirdSec > div div.videoDiv {
     width: 50%;
-    height: 100vh;
+    position: relative;
+}
+.thirdSec > div div.videoDiv .stopVideoButton {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    color: var(--strong);
+    background-color: #fdfdf1;
+    padding: 5px;
+    border-radius: 10px;
+}
+.thirdSec > div div.videoDiv video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .thirdSec > div > div {
@@ -27,7 +44,7 @@
     width: 200px;
     margin-bottom: 10px;
     border-radius: 50%;
-    animation: rotation 20s infinite ease-in-out;
+    animation: rotation 30s infinite linear;
 }
 @keyframes rotation {
     0% {
@@ -38,9 +55,15 @@
     }
 }
 .thirdSec > div > div h1 {
-    font-family: "humane";
+    font-family: "humane", Arial, Helvetica, sans-serif;
     font-size: 5rem;
     margin-bottom: 15px;
+}
+@media (max-width: 450px) {
+    .thirdSec > div > div h1 {
+        font-family: "humaneLight", Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+    }
 }
 .thirdSec > div > div > div {
     display: flex;
@@ -111,7 +134,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .thirdSec > div video {
+    .thirdSec > div div.videoDiv {
         order: 1;
         width: 100%;
         height: 50vh;
@@ -140,5 +163,10 @@
     }
     .thirdSec > div > div > div {
         gap: 10px;
+    }
+}
+@media (max-width: 370px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 0.5rem;
     }
 }

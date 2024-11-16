@@ -64,7 +64,7 @@ const NavSmall = ({ setDisplay }) => {
 
                     <a
                         data-aos="fade-right"
-                        href="#project"
+                        href="#about"
                         onClick={() => {
                             handleClose();
                             /* changeRoot() */
@@ -72,8 +72,8 @@ const NavSmall = ({ setDisplay }) => {
                     >
                         <li>
                             <button className="btn">
-                                <span className="btn-text-one">פרוייקט</span>
-                                <span className="btn-text-two">פרוייקט</span>
+                                <span className="btn-text-one">אודות</span>
+                                <span className="btn-text-two">אודות</span>
                             </button>
                         </li>
                     </a>
@@ -110,26 +110,6 @@ const NavSmall = ({ setDisplay }) => {
                                 </a>
                                 <a
                                     id="middle"
-                                    href="#project"
-                                    onClick={() => {
-                                        handleClose();
-                                        /* changeRoot() */
-                                    }}
-                                >
-                                    דף לדוגמה
-                                </a>
-                                <a
-                                    id="middle"
-                                    href="#faq"
-                                    onClick={() => {
-                                        handleClose();
-                                        /* changeRoot() */
-                                    }}
-                                >
-                                    שאלות נפוצות
-                                </a>
-                                <a
-                                    id="middle"
                                     href="#whyMe"
                                     onClick={() => {
                                         handleClose();
@@ -139,7 +119,7 @@ const NavSmall = ({ setDisplay }) => {
                                     למה אני
                                 </a>
                                 <a
-                                    id="bottom"
+                                    id="middle"
                                     href="#proccess"
                                     onClick={() => {
                                         handleClose();
@@ -147,6 +127,26 @@ const NavSmall = ({ setDisplay }) => {
                                     }}
                                 >
                                     תהליך
+                                </a>
+                                <a
+                                    id="middle"
+                                    href="#project"
+                                    onClick={() => {
+                                        handleClose();
+                                        /* changeRoot() */
+                                    }}
+                                >
+                                    דף לדוגמה
+                                </a>
+                                <a
+                                    id="bottom"
+                                    href="#faq"
+                                    onClick={() => {
+                                        handleClose();
+                                        /* changeRoot() */
+                                    }}
+                                >
+                                    שאלות נפוצות
                                 </a>
                             </div>
                         </div>

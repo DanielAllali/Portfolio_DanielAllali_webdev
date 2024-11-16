@@ -15,10 +15,10 @@ const Footer = () => {
                             <a href="#contact">צור קשר</a>
                         </li>
                         <li>
-                            <a href="#services">שירותים/אודות</a>
+                            <a href="#about">אודות</a>
                         </li>
                         <li>
-                            <a href="#proccess">תהליך</a>
+                            <a href="#">בית</a>
                         </li>
                     </ul>
                 </main>

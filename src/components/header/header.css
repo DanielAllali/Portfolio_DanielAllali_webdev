@@ -10,13 +10,15 @@
     align-items: center;
     justify-content: space-between;
     color: var(--weak);
-    background-color: var(--strong);
+    background-color: rgba(0, 0, 0, 0.5);
     padding-left: 5vw;
     padding-right: 7vw;
     transform: translateY(0);
-    transition: transform 0.1s;
+    transition: transform 0.1s, background-color 2s;
 }
-
+.header:hover {
+    background-color: var(--strong);
+}
 .header h1 {
     font-size: 4rem;
     font-family: "humane", sans-serif;

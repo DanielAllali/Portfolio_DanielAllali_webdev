@@ -6,7 +6,11 @@ const SocialBtns = () => {
             <ul className="wrapper">
                 <li className="icon facebook">
                     <span className="tooltip">Facebook</span>
-                    <a href="https://www.facebook.com">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61568916719093"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -19,7 +23,11 @@ const SocialBtns = () => {
                 </li>
                 <li className="icon whatsapp">
                     <span className="tooltip">Whatsapp</span>
-                    <a href="https://www.whatsapp.com">
+                    <a
+                        href="https://wa.me/972506581406"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
