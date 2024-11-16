@@ -1,15 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 import Header from "../header/Header";
 import FirstSection from "./firstSection/FirstSection";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import SecondSection from "./secondSection/SecondSection";
 import ThirdSection from "./thirdSection/ThirdSection.jsx";
-import ForthSection from "./forthSection/ForthSection.jsx";
 import FifthSection from "./fifthSection/FifthSection.jsx";
 import Contact from "./contact/Contact.jsx";
 import Arrow from "../arrow/Arrow.jsx";
-import { Context } from "../../Context";
 import SeventhSection from "./seventhSection/SeventhSection.jsx";
 import Footer from "./footer/Footer.jsx";
 import Faq from "./faq/Faq.jsx";
@@ -17,7 +15,6 @@ import myImage from "../../media/images/myImage.jpg";
 import myImage2 from "../../media/images/myImage2.jpg";
 
 const Home = () => {
-    const { isHijack, setIsHijack } = useContext(Context);
     const [imageSrc, setImageSrc] = useState(myImage);
 
     useEffect(() => {
@@ -59,23 +56,22 @@ const Home = () => {
                                 מומחה FullStack, סטודנט בתכנית לנוער מוכשר
                                 במתמטיקה של בר אילן
                                 <br />
-                                ובנימה אישית - יש לי תשוקה לתחום ואני בטוב שיחד
+                                ובנימה אישית - יש לי תשוקה לתחום ואני בטוח שיחד
                                 נבנה לך אתר מנצח!
                             </p>
-                            <a href="#contact">
-                                <button className="underlineBtn">
-                                    צור קשר
-                                </button>
+                            <a
+                                href="#contact"
+                                className="underlineBtn"
+                                aria-label="Contact"
+                            >
+                                צור קשר
                             </a>
                         </div>
-                        <img src={imageSrc} alt="My image" />
+                        <img src={imageSrc} alt="Portrait of me" />
                     </li>
                 </ul>
             </section>
 
-            {/* <section className="forthSec">
-                    {isHijack && <ForthSection />}
-                </section> */}
             <section className="fifthSec">
                 <FifthSection />
             </section>

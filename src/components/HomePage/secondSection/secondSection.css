@@ -116,6 +116,7 @@
     font-size: 1rem;
     overflow: hidden;
     display: inline-block;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -199,12 +200,12 @@
     color: white !important;
 }
 
-.secondSec > ul li a .underlineBtn {
+.secondSec > ul li a.underlineBtn {
     font-weight: normal;
     margin-bottom: 0 !important;
 }
 
-.secondSec > ul li a .underlineBtn::after {
+.secondSec > ul li a.underlineBtn::after {
     height: 1px;
 }
 

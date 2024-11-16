@@ -1,11 +1,8 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./header.css";
 import NavSmall from "./NavSmall";
-import { Context } from "../../Context";
 
 const Header = () => {
-    const { isHijack, setIsHijack } = useContext(Context);
-
     const [smallNavD, setSmallNavD] = useState(false);
     const [displayNav, setDisplayNav] = useState(false);
     const [visible, setVisible] = useState(true);
@@ -36,13 +33,6 @@ const Header = () => {
         }
     }, [visible]);
 
-    /*  const changeRoot = () => {
-        setIsHijack(false);
-        setTimeout(() => {
-            setIsHijack(true);
-        }, 1000);
-    };
- */
     return (
         <>
             <div ref={header} className="header">
@@ -61,7 +51,10 @@ const Header = () => {
                         </a>
                         <li>
                             <div className="paste-button">
-                                <button className="button">
+                                <button
+                                    className="button"
+                                    aria-label="More menu"
+                                >
                                     עוד <span>&nbsp;▼</span>
                                 </button>
                                 <div className="dropdown-content">

@@ -21,7 +21,7 @@ const ThirdSection = () => {
     return (
         <div>
             <div id="project">
-                <img src={gymImg} alt="image can't load try again" />
+                <img src={gymImg} alt="Gym logo" />
                 <h1>PROACTIVE GYM</h1>
                 <div>
                     <h2>תוצאות</h2>
@@ -47,7 +47,12 @@ const ThirdSection = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <button className="underlineBtn">לאתר</button>
+                    <button
+                        className="underlineBtn"
+                        aria-label="To example website"
+                    >
+                        לאתר
+                    </button>
                 </a>
             </div>
             <div className="videoDiv">
@@ -57,7 +62,7 @@ const ThirdSection = () => {
                 </video>
                 <button
                     className="stopVideoButton"
-                    aria-label="toggle stop video button"
+                    aria-label="Toggle stop video"
                     onClick={handleToggleStop}
                 >
                     {videoPlay ? (

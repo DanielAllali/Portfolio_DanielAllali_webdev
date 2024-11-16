@@ -1,11 +1,7 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./header.css";
 
-/* import { Context } from "../../Context";
- */
 const NavSmall = ({ setDisplay }) => {
-    /*     const { isHijack, setIsHijack } = useContext(Context);
-     */
     const navRef = useRef();
     const ulRef = useRef();
     useEffect(() => {
@@ -55,7 +51,10 @@ const NavSmall = ({ setDisplay }) => {
                         }}
                     >
                         <li>
-                            <button className="btn">
+                            <button
+                                className="btn"
+                                aria-label="Back to the top"
+                            >
                                 <span className="btn-text-one">בית</span>
                                 <span className="btn-text-two">בית</span>
                             </button>
@@ -71,7 +70,7 @@ const NavSmall = ({ setDisplay }) => {
                         }}
                     >
                         <li>
-                            <button className="btn">
+                            <button className="btn" aria-label="About page">
                                 <span className="btn-text-one">אודות</span>
                                 <span className="btn-text-two">אודות</span>
                             </button>
@@ -86,7 +85,7 @@ const NavSmall = ({ setDisplay }) => {
                         }}
                     >
                         <li>
-                            <button className="btn">
+                            <button className="btn" aria-label="Contact">
                                 <span className="btn-text-one">צור קשר</span>
                                 <span className="btn-text-two">צור קשר</span>
                             </button>
@@ -94,7 +93,7 @@ const NavSmall = ({ setDisplay }) => {
                     </a>
                     <li data-aos="fade-right">
                         <div className="paste-button">
-                            <button className="button">
+                            <button className="button" aria-label="More menu">
                                 עוד <span>&nbsp;▼</span>
                             </button>
                             <div className="dropdown-content">

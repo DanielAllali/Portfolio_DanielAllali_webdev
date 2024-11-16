@@ -55,7 +55,7 @@ const Faq = () => {
                     <li key={key} className={openFaqs[key] ? "expanded" : ""}>
                         <div>
                             <h2 style={{ direction: "rtl" }}>{he}</h2>
-                            <button>
+                            <button aria-label="Toggle show answer">
                                 <label className="hamburger">
                                     <input
                                         onClick={() => handleToggleFaq(key)}

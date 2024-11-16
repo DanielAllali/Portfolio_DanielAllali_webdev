@@ -20,6 +20,21 @@ footer header {
 footer header h1 {
     font-family: "alef";
 }
+footer header > button {
+    background: none;
+    border: none;
+    color: var(--weak);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+footer header > button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
 footer hr {
     width: 100%;
     margin-bottom: 10px;

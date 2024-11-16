@@ -25,16 +25,6 @@ section {
     min-height: 100vh;
 }
 
-.forthSec {
-    min-height: 100vh;
-}
-
-@media (max-width: 480px) {
-    .forthSec {
-        display: none;
-    }
-}
-
 .fifthSec {
     min-height: 100vh;
 }

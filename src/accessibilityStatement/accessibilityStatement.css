@@ -1,0 +1,90 @@
+#accessibilityStatement {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--strong);
+    color: var(--weak);
+    padding: 20px;
+}
+#accessibilityStatement * {
+    direction: rtl;
+    text-align: right;
+}
+#accessibilityStatement p {
+    width: 60%;
+    font-weight: bold;
+    color: #ccc;
+}
+
+#accessibilityStatement h2 {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#accessibilityStatement h2 {
+    font-size: 1.5rem;
+}
+#accessibilityStatement a {
+    color: var(--highlight);
+}
+#accessibilityStatement button {
+    font-size: 2rem;
+    border: none;
+    background-color: var(--highlight);
+    color: var(--weak);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+#accessibilityStatement button:hover {
+    background-color: var(--highlight_strong);
+}
+@media (max-width: 880px) {
+    #accessibilityStatement {
+        width: 800px;
+    }
+    #accessibilityStatement h1 {
+        font-size: 1.5rem;
+    }
+    #accessibilityStatement h2 {
+        font-size: 1.1rem;
+    }
+    #accessibilityStatement p {
+        width: 90%;
+    }
+}
+@media (max-width: 760px) {
+    #accessibilityStatement {
+        width: 600px;
+    }
+    #accessibilityStatement h1 {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 570px) {
+    #accessibilityStatement {
+        width: 450px;
+    }
+    #accessibilityStatement h1 {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 440px) {
+    #accessibilityStatement {
+        width: 100vw;
+    }
+    #accessibilityStatement h1 {
+        font-size: 1rem;
+    }
+    #accessibilityStatement h2 {
+        font-size: 0.8rem;
+    }
+    #accessibilityStatement p {
+        font-size: 0.8rem;
+    }
+}

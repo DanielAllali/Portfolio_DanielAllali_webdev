@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./fifthSection.css";
-import websiteVideo from "../../../media/images/websiteVideo.mp4";
+import websiteVideo from "../../../media/images/expertVideo.mp4";
 import techVideo from "../../../media/images/techVideo.mp4";
 import personalityVideo from "../../../media/images/personalityVideo.mp4";
 
@@ -50,7 +50,7 @@ const FifthSection = () => {
                     </video>
                     <button
                         className="stopVideoButton"
-                        aria-label="toggle stop video button"
+                        aria-label="Toggle stop video"
                         onClick={() => {
                             handleToggleStop(websiteVideoRef, "website");
                         }}
@@ -90,7 +90,7 @@ const FifthSection = () => {
                     </video>
                     <button
                         className="stopVideoButton"
-                        aria-label="toggle stop video button"
+                        aria-label="Toggle stop video"
                         onClick={() => {
                             handleToggleStop(techVideoRef, "tech");
                         }}
@@ -133,7 +133,7 @@ const FifthSection = () => {
                     </video>
                     <button
                         className="stopVideoButton"
-                        aria-label="toggle stop video button"
+                        aria-label="Toggle stop video"
                         onClick={() => {
                             handleToggleStop(
                                 personalityVideoRef,

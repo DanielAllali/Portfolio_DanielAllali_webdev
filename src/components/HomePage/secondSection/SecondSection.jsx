@@ -95,14 +95,14 @@ const SecondSection = () => {
                 <h2>אתרי אינטרנט</h2>
             </div>
             <div>
-                <img ref={img1Ref} src={img1} alt="image" />
-                <img ref={img2Ref} src={img2} alt="image" />
-                <img ref={img2Ref2} src={img2} alt="image" />
-                <img ref={img3Ref} src={img3} alt="image" />
-                <img ref={img4Ref} src={img4} alt="image" />
+                <img ref={img1Ref} src={img1} alt="Office" />
+                <img ref={img2Ref} src={img2} alt="Desk with screen" />
+                <img ref={img2Ref2} src={img2} alt="Desk with screen 2" />
+                <img ref={img3Ref} src={img3} alt="Do something great sign" />
+                <img ref={img4Ref} src={img4} alt="Rocket lunch" />
             </div>
-            <a href="#contact">
-                <button className="underlineBtn">צור קשר</button>
+            <a href="#contact" className="underlineBtn" aria-label="Contact">
+                צור קשר
             </a>
         </div>
     );
