@@ -280,10 +280,19 @@
     }
 }
 @media (max-width: 400px) {
-    .secondSec > ul li div h1 {
-        font-size: 1.5rem;
-    }
     .secondSec > ul li div p {
-        font-size: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .secondSec > ul li {
+        flex-direction: column;
+    }
+    .secondSec > ul li > img {
+        height: 300px;
+        margin-top: 20px;
+        order: 1;
+    }
+    .secondSec > ul li > div {
+        height: 250px;
+        order: 2;
     }
 }

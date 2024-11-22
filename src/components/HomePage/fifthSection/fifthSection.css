@@ -130,6 +130,7 @@
     color: var(--highlight);
     font-weight: bold;
 }
+
 @media (max-width: 1300px) {
     .fifthSec > div > div > div button.stopVideoButton {
         cursor: pointer;
@@ -157,6 +158,9 @@
     }
 }
 @media (max-width: 480px) {
+    .fifthSec > div > div > div + div {
+        height: auto !important;
+    }
     .fifthSec > div > div {
         height: auto;
     }
@@ -182,8 +186,10 @@
         font-size: 0.7rem;
     }
 }
-@media (max-width: 400px) {
-    .fifthSec > div > div > div.textDiv p {
-        font-size: 0.5rem;
+/* @media (max-width: 400px) {
+    .fifthSec > div > div:last-child > div + div {
+        height: auto;
+        background-color: red !important;
     }
 }
+ */
