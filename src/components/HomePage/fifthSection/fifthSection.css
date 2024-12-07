@@ -153,9 +153,6 @@
         height: 300px;
         order: 2 !important;
     }
-    .fifthSec > div > div > div.textDiv p {
-        font-size: 0.7rem;
-    }
 }
 @media (max-width: 480px) {
     .fifthSec > div > div > div + div {
@@ -170,9 +167,7 @@
     .fifthSec > div > div > div h1 {
         font-size: 1.5rem;
     }
-    .fifthSec > div > div > div p {
-        font-size: 0.7rem;
-    }
+
     .fifthSec > div > div > div video {
         max-height: 180px;
     }
@@ -186,10 +181,3 @@
         font-size: 0.7rem;
     }
 }
-/* @media (max-width: 400px) {
-    .fifthSec > div > div:last-child > div + div {
-        height: auto;
-        background-color: red !important;
-    }
-}
- */
