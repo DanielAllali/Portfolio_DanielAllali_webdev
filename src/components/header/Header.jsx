@@ -81,7 +81,7 @@ const Header = () => {
                         setSmallNavD(true);
                     }}
                 >
-                    תפריט
+                    <i className="bi bi-list"></i>
                 </h2>
             </div>
             {smallNavD && <NavSmall setDisplay={setSmallNavD} />}
