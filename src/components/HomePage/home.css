@@ -17,10 +17,6 @@ section {
     flex-direction: column;
 }
 
-.secondSec {
-    min-height: 100vh;
-}
-
 .thirdSec {
     min-height: 100vh;
 }
@@ -31,5 +27,8 @@ section {
 
 .sixthSec {
     min-height: 100vh;
+    background-color: #f8f5ef;
+}
+.maintenance {
     background-color: #f8f5ef;
 }

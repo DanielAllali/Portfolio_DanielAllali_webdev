@@ -6,101 +6,30 @@ import img3 from "../../../media/images/img3.jpg";
 import img4 from "../../../media/images/img4.jpg";
 
 const SecondSection = () => {
-    const img1Ref = useRef();
-    const img2Ref = useRef();
-    const img2Ref2 = useRef();
-    const img3Ref = useRef();
-    const img4Ref = useRef();
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleImages);
-    }, []);
-    const handleImages = () => {
-        try {
-            if (
-                (img1Ref.current,
-                img2Ref.current,
-                img2Ref2.current,
-                img3Ref.current,
-                img4Ref.current)
-            ) {
-                img1Ref.current.style.zIndex = "1";
-                img2Ref.current.style.zIndex = "1";
-                img2Ref2.current.style.zIndex = "1";
-                img3Ref.current.style.zIndex = "1";
-                img4Ref.current.style.zIndex = "1";
-                if (window.scrollY < 500) {
-                    img1Ref.current.style.zIndex = "2";
-                    return;
-                }
-                if (window.scrollY < 650) {
-                    img2Ref.current.style.zIndex = "2";
-                    return;
-                }
-                if (window.scrollY < 800) {
-                    img2Ref2.current.style.zIndex = "2";
-                    return;
-                }
-                if (window.scrollY < 950) {
-                    img3Ref.current.style.zIndex = "2";
-                    return;
-                }
-                if (window.scrollY < 1100) {
-                    img4Ref.current.style.zIndex = "2";
-                    return;
-                }
-            }
-        } catch (err) {
-            console.log(err);
-        }
-    };
     return (
         <div id="services">
-            <h1 data-aos="fade-up">שירותים</h1>
-            {/* <p>
-                בזכות יכולות העיצוב וחוויית המשתמש שאני מביא,
-                <br /> אני מצליח להמציא את עצמי מחדש בכל פרויקט ולהביא תוצאה
-                חדשנית ויצירתית בכל פעם.
-            </p> */}
-            {/* <p>
-                חדשנות<span>.</span> יצירתיות<span>.</span> פונקציונליות
-                <span>.</span> עיצוב חכם.
+            <h1 data-aos="fade-up">
+                עיצוב ובניית דפי נחיתה שממירים מתעניינים
                 <br />
-                בכל פרויקט מחדש
-            </p> */}
-            <p>
-                חדשנות
-                <span>
-                    <i class="bi bi-square-fill"></i>
-                </span>
-                יצירתיות
-                <span>
-                    <i class="bi bi-square-fill"></i>
-                </span>
-                פונקציונליות
-                <span>
-                    <i class="bi bi-square-fill"></i>
-                </span>
-                עיצוב חכם
-                <span>
-                    <i class="bi bi-square-fill"></i>
-                </span>
+                <span>ללקוחות משלמים</span>
+            </h1>
+            <p data-aos="fade-up">
+                ?
+                <span style={{ color: "#D8F1F9" }}>
+                    נמאס לך לקבל לידים קרים
+                </span>{" "}
+                שלא מובילים לתוצאות
                 <br />
-                בכל פרויקט מחדש
+                אני כאן כדי ליצור עבורך דף נחיתה
+                <span style={{ color: "#FFB366" }}>
+                    {" "}
+                    שימשוך לידים איכותיים{" "}
+                </span>
+                ויהפוך לכלי עוצמתי לשיווק הממומן שלך.
+                <br />
+                .תשאיר פרטים, אני אצור איתך קשר ואני אצור לך דף נחיתה ממיר
             </p>
-            <div>
-                <h2>יעילות</h2>
-                <h2>שירות אישי</h2>
-                <h2>דפי נחיתה</h2>
-                <h2>אתרי אינטרנט</h2>
-            </div>
-            <div>
-                <img ref={img1Ref} src={img1} alt="Office" />
-                <img ref={img2Ref} src={img2} alt="Desk with screen" />
-                <img ref={img2Ref2} src={img2} alt="Desk with screen 2" />
-                <img ref={img3Ref} src={img3} alt="Do something great sign" />
-                <img ref={img4Ref} src={img4} alt="Rocket lunch" />
-            </div>
+
             <a href="#contact" className="underlineBtn" aria-label="Contact">
                 צור קשר
             </a>

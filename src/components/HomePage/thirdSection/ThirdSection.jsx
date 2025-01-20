@@ -1,77 +1,53 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./thirdSection.css";
-import gymImg from "../../../media/images/ProActive_logo_circle.png";
-import gymVideo from "../../../media/images/project_video.mp4";
+import navaWebsiteImg from "../../../media/images/navaWebsiteImg.png";
+import gtrscreensWebsiteImg from "../../../media/images/gtrscreensWebsiteImg.png";
+import בדרך from "../../../media/images/בדרך.png";
 
 const ThirdSection = () => {
-    const videoRef = useRef(null);
-    const [videoPlay, setVideoPlay] = useState(true);
-
-    const handleToggleStop = () => {
-        if (videoRef.current) {
-            if (videoPlay) {
-                videoRef.current.pause();
-            } else {
-                videoRef.current.play();
-            }
-            setVideoPlay(!videoPlay);
-        }
-    };
-
     return (
-        <div>
-            <div id="project">
-                <img src={gymImg} alt="Gym logo" />
-                <h1>PROACTIVE GYM</h1>
-                <div>
-                    <h2>תוצאות</h2>
-                    <h2>אימונים אישיים</h2>
-                    <h2>חוגים</h2>
-                    <h2>חדר כושר מאובזר</h2>
-                </div>
-                {/* <p>
-                    פרויקט לדוגמה. אתר תדמית למכון כושר פקטיבי,
-                    <br />
-                    בשביל להראות את היכולות שלי בעיצוב מימוש של עיצוב מהירות
-                    ויעילות של אתר.
-                </p> */}
-                <p>
-                    פרויקט לדוגמה - אתר אינטרנט של מכון כושר
-                    <br />
-                    הפרויקט מדגים יכולות עיצוב, מהירות תגובה ויציבות האתר
-                    <br />
-                    לתשומת ליבכם ה- Look & Feel וזרימת המידע של האתר
-                </p>
-                <a
-                    href="https://danielallali.github.io/Corporate_Gym_Website_example/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <button
-                        className="underlineBtn"
-                        aria-label="To example website"
+        <div id="examples">
+            <h1 data-aos="fade-up">תיק עבודות</h1>
+            <ul>
+                <li data-aos="fade-up">
+                    <img src={navaWebsiteImg} alt="Nava website" />
+                    <h2>נאוה בכר - צורפת</h2>
+                    <p>דניאל, זה ממש מושלם! אין עליך❤ תודה רבה</p>
+                    <a
+                        href="https://navabachar.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        לאתר
-                    </button>
-                </a>
-            </div>
-            <div className="videoDiv">
-                <video ref={videoRef} autoPlay muted loop playsInline>
-                    <source src={gymVideo} type="video/mp4" />
-                    Your browser does not support the video.
-                </video>
-                <button
-                    className="stopVideoButton"
-                    aria-label="Toggle stop video"
-                    onClick={handleToggleStop}
-                >
-                    {videoPlay ? (
-                        <i className="bi bi-pause-fill"></i>
-                    ) : (
-                        <i className="bi bi-play-fill"></i>
-                    )}
-                </button>
-            </div>
+                        <i className="bi bi-arrow-up-right-circle"></i>
+                    </a>
+                </li>
+                <li data-aos="fade-up">
+                    <img src={gtrscreensWebsiteImg} alt="Gtr Screens website" />
+                    <h2>Gtr Screens</h2>
+                    <p>
+                        למי שמתלבט, דניאל, נער בן 15, בנה עבורי את האתר לחברה
+                        שלי בצורה מקצועית, מדויקת ומרשימה. הוא קשוב ללקוח, פותר
+                        בעיות במהירות ומציע רעיונות יצירתיים שמעלים את הרמה.
+                        מעבר ליכולות הטכניות הגבוהות, דניאל מביא איתו גישה
+                        חיובית, חושב מחוץ לקופסה, ופשוט כיף לעבוד איתו. ממליץ
+                        בחום!
+                        <br /> —————————
+                        <br /> גילעד פרץ CPO | GTR Screens
+                    </p>
+                    <a
+                        href="https://gtrscreens.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i className="bi bi-arrow-up-right-circle"></i>
+                    </a>
+                </li>
+                <li data-aos="fade-up">
+                    <img src={בדרך} alt="בדרך" />
+                    <h2>בבנייה</h2>
+                    <p>אתר בדרך</p>
+                </li>
+            </ul>
         </div>
     );
 };

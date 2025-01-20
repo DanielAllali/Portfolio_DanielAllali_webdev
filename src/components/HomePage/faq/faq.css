@@ -1,10 +1,5 @@
 #faq {
     background: #f8f5ef;
-    background: linear-gradient(
-        0deg,
-        rgba(248, 245, 239, 1) 25%,
-        rgba(253, 253, 241, 1) 60%
-    );
     text-align: right;
 }
 
