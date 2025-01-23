@@ -58,17 +58,15 @@ const Header = () => {
                                     עוד <span>&nbsp;▼</span>
                                 </button>
                                 <div className="dropdown-content">
-                                    <a id="top" href="#services">
-                                        שירותים
+                                    <a id="top" href="#examples">
+                                        תיק עבודות
                                     </a>
-                                    <a id="middle" href="#whyMe">
-                                        למה אני
-                                    </a>
+
                                     <a id="middle" href="#proccess">
                                         תהליך
                                     </a>
-                                    <a id="middle" href="#project">
-                                        דף לדוגמה
+                                    <a id="middle" href="#maintenance">
+                                        תחזוקה
                                     </a>
                                     <a id="bottom" href="#faq">
                                         שאלות נפוצות
@@ -83,7 +81,7 @@ const Header = () => {
                         setSmallNavD(true);
                     }}
                 >
-                    תפריט
+                    <i className="bi bi-list"></i>
                 </h2>
             </div>
             {smallNavD && <NavSmall setDisplay={setSmallNavD} />}

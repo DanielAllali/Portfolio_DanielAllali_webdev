@@ -19,7 +19,7 @@ const Footer = () => {
                 </header>
                 <hr />
                 <main>
-                    <h2>&copy; 2024 All rights reserved</h2>
+                    <h2>2025 כל זכויות שמורות עודכן לאחרונה ב: ינואר&copy; </h2>
                     <ul>
                         <li>
                             <a href="#contact">צור קשר</a>

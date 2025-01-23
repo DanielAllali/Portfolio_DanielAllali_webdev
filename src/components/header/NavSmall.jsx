@@ -99,24 +99,15 @@ const NavSmall = ({ setDisplay }) => {
                             <div className="dropdown-content">
                                 <a
                                     id="top"
-                                    href="#services"
+                                    href="#examples"
                                     onClick={() => {
                                         handleClose();
                                         /* changeRoot() */
                                     }}
                                 >
-                                    שירותים
+                                    תיק עבודות
                                 </a>
-                                <a
-                                    id="middle"
-                                    href="#whyMe"
-                                    onClick={() => {
-                                        handleClose();
-                                        /* changeRoot() */
-                                    }}
-                                >
-                                    למה אני
-                                </a>
+
                                 <a
                                     id="middle"
                                     href="#proccess"
@@ -129,13 +120,13 @@ const NavSmall = ({ setDisplay }) => {
                                 </a>
                                 <a
                                     id="middle"
-                                    href="#project"
+                                    href="#maintenance"
                                     onClick={() => {
                                         handleClose();
                                         /* changeRoot() */
                                     }}
                                 >
-                                    דף לדוגמה
+                                    תחזוקה
                                 </a>
                                 <a
                                     id="bottom"

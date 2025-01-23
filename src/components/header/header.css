@@ -1,5 +1,6 @@
 .header {
     width: 100vw;
+    height: 100px;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -23,7 +24,13 @@
     font-size: 4rem;
     font-family: "humane", sans-serif;
 }
-
+@media (max-width: 800px) {
+    .header h1 {
+        font-family: "NotoSans";
+        font-size: 2rem;
+        letter-spacing: -2px;
+    }
+}
 .header nav ul {
     display: flex;
     flex-direction: row;
@@ -63,8 +70,8 @@
     display: none;
     cursor: pointer;
 }
-.header > h2:hover {
-    text-decoration: underline;
+.header > h2 i {
+    cursor: pointer;
 }
 .header nav ul a li {
     color: var(--weak);

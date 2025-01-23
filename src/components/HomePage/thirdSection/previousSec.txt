@@ -1,0 +1,256 @@
+import React, { useRef, useState } from "react";
+import "./thirdSection.css";
+import gymImg from "../../../media/images/ProActive_logo_circle.png";
+import gymVideo from "../../../media/images/project_video.mp4";
+
+const ThirdSection = () => {
+    const videoRef = useRef(null);
+    const [videoPlay, setVideoPlay] = useState(true);
+
+    const handleToggleStop = () => {
+        if (videoRef.current) {
+            if (videoPlay) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setVideoPlay(!videoPlay);
+        }
+    };
+
+    return (
+        <div>
+            <div id="project">
+                <img src={gymImg} alt="Gym logo" />
+                <h1>PROACTIVE GYM</h1>
+                <div>
+                    <h2>תוצאות</h2>
+                    <h2>אימונים אישיים</h2>
+                    <h2>חוגים</h2>
+                    <h2>חדר כושר מאובזר</h2>
+                </div>
+                {/* <p>
+                    פרויקט לדוגמה. אתר תדמית למכון כושר פקטיבי,
+                    <br />
+                    בשביל להראות את היכולות שלי בעיצוב מימוש של עיצוב מהירות
+                    ויעילות של אתר.
+                </p> */}
+                <p>
+                    פרויקט לדוגמה - אתר אינטרנט של מכון כושר
+                    <br />
+                    הפרויקט מדגים יכולות עיצוב, מהירות תגובה ויציבות האתר
+                    <br />
+                    לתשומת ליבכם ה- Look & Feel וזרימת המידע של האתר
+                </p>
+                <a
+                    href="https://danielallali.github.io/Corporate_Gym_Website_example/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <button
+                        className="underlineBtn"
+                        aria-label="To example website"
+                    >
+                        לאתר
+                    </button>
+                </a>
+            </div>
+            <div className="videoDiv">
+                <video ref={videoRef} autoPlay muted loop playsInline>
+                    <source src={gymVideo} type="video/mp4" />
+                    Your browser does not support the video.
+                </video>
+                <button
+                    className="stopVideoButton"
+                    aria-label="Toggle stop video"
+                    onClick={handleToggleStop}
+                >
+                    {videoPlay ? (
+                        <i className="bi bi-pause-fill"></i>
+                    ) : (
+                        <i className="bi bi-play-fill"></i>
+                    )}
+                </button>
+            </div>
+        </div>
+    );
+};
+
+export default ThirdSection;
+
+
+
+css css css css css css css css css css css css css css css css css css css css css css css css
+
+.thirdSec {
+    background-color: #fdfdf1;
+}
+.thirdSec > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.thirdSec > div div.videoDiv {
+    width: 50%;
+    position: relative;
+}
+.thirdSec > div div.videoDiv .stopVideoButton {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    color: var(--strong);
+    background-color: #fdfdf1;
+    padding: 5px;
+    border-radius: 10px;
+}
+.thirdSec > div div.videoDiv video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thirdSec > div > div {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding: 50px;
+    padding-bottom: 0;
+}
+.thirdSec > div > div img {
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    animation: rotation 30s infinite linear;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.thirdSec > div > div h1 {
+    font-family: "humane", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+@media (max-width: 450px) {
+    .thirdSec > div > div h1 {
+        font-family: "humaneLight", Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+    }
+}
+.thirdSec > div > div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.thirdSec > div > div > div h2 {
+    background: none;
+    border: 1px solid var(--strong);
+    font-size: 1rem;
+    font-weight: normal;
+    border-radius: 20px;
+    color: var(--strong);
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: background-color 0.2s;
+}
+
+.thirdSec > div > div p {
+    direction: rtl;
+    font-weight: bold;
+}
+.thirdSec > div > div > a button {
+    color: var(--strong);
+    margin-bottom: 0;
+    margin-top: 100px;
+    font-size: 1.3rem;
+}
+.thirdSec > div > div > a button::after {
+    background-color: var(--strong);
+    height: 1px;
+}
+@media (max-width: 1100px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .thirdSec > div > div > div {
+        gap: 5px;
+    }
+}
+@media (max-width: 860px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 0.5rem;
+        padding: 5px;
+    }
+}
+@media (max-width: 830px) {
+    .thirdSec > div > div p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .thirdSec > div > div > div {
+        gap: 15px;
+    }
+    .thirdSec > div {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .thirdSec > div div.videoDiv {
+        order: 1;
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+    .thirdSec > div > div {
+        order: 2;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        padding: 10px;
+    }
+    .thirdSec > div > div img {
+        width: 150px;
+    }
+    .thirdSec > div > div h1 {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 470px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 0.7rem;
+    }
+    .thirdSec > div > div > div {
+        gap: 10px;
+    }
+}
+@media (max-width: 370px) {
+    .thirdSec > div > div > div h2 {
+        font-size: 0.5rem;
+    }
+}
